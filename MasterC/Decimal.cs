@@ -15,11 +15,11 @@
 
 //Int32 - 00000000 00000000 00000000 00000001
 
-decimal bankAccountBalance;
+//decimal bankAccountBalance;
 
-bankAccountBalance = 2.34M;
+//bankAccountBalance = 2.34M;
 
-Console.WriteLine(bankAccountBalance);
+//Console.WriteLine(bankAccountBalance);
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Examples and Explanations:
@@ -44,7 +44,7 @@ Console.WriteLine(bankAccountBalance);
 
 //we have Int32 - 00000000 00000000 00000000 00000000 
 
-//so in memory, this is what's geting stored :
+//so in memory, this is what's getting stored :
 
 //00000000 00000000 00000000 00000000
 
