@@ -9,9 +9,9 @@
 //    }
 //}
 
-using System.Globalization;
+//using System.Globalization;
 
-DateTime today = DateTime.UtcNow;
+//DateTime today = DateTime.UtcNow;
 
 //DateTime birthday = DateTime.Parse("15/06/1998");
 
@@ -21,7 +21,7 @@ DateTime today = DateTime.UtcNow;
 
 //Console.WriteLine(birthday.ToString());
 
-Console.WriteLine(today.ToString("MMMM dd, yyyy hh:mm tt zzz", CultureInfo.InvariantCulture));
+//Console.WriteLine(today.ToString("MMMM dd, yyyy hh:mm tt zzz", CultureInfo.InvariantCulture));
 
 
 
