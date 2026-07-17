@@ -55,12 +55,17 @@ string lastName = Console.ReadLine();
 
 
 
-bool isComplete = false;
+int age = 50;
 
-if (isComplete = true)
-{
-    Console.WriteLine("You have a cool first name.");
-}
+// ==, >, >=, <, <=, != (! =)->means not equal
+
+
+
+
+//if (age >= 40 && age < 50)
+//{
+//    Console.WriteLine("You are in your 40's");
+//}
 
 
 
@@ -434,12 +439,12 @@ if (isComplete = true)
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-bool isComplete = false;
+//bool isComplete = false;
 
-if (isComplete = true)
-{
-    Console.WriteLine("You have a cool first name.");
-}
+//if (isComplete = true)
+//{
+//    Console.WriteLine("You have a cool first name.");
+//}
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -451,13 +456,213 @@ if (isComplete = true)
 
 //because isComplete = true, because we assigned this value first and after that compare it.  
 
+//notice:
+
+//one =, is assignment .
+
+//2 ==, is comparison.
+
+
+//the correct code is :
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//bool isComplete = false;
+
+//if (isComplete == true)
+//{
+//    Console.WriteLine("You have a cool first name.");
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//other options :
+
+// > (greater than)
+
+//if it's 100:
 
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//int age = 100;
+
+//if (age > 100)
+//{
+//    Console.WriteLine("You are up there in years.");
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+//no console writeline .
+
+//if it's 101:
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//int age = 101;
+
+//if (age > 100)
+//{
+//    Console.WriteLine("You are up there in years.");
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//we get Console WriteLine "You are up there in years."
+
+//because it's > (greater than).
+
+// >= (greater than or equals to)
+
+//if it's 100:
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//int age = 100;
+
+//if (age >= 100)
+//{
+//    Console.WriteLine("You are up there in years.");
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//we get Console WriteLine "You are up there in years."
+
+//because it's >= (greater than or equals to).
+
+// <= (less than or equals to)
+
+//if it's 100:
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//int age = 100;
+
+//if (age <= 100)
+//{
+//    Console.WriteLine("You still have a ways to go.");
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//we get Console WriteLine "You still have a ways to go."
+
+//if it's 101:
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//int age = 101;
+
+//if (age <= 100)
+//{
+//    Console.WriteLine("You are up there in years.");
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//no console writeline .
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//ranges:
+
+//if we are 101:
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//int age = 101;
+
+//if (age >= 40 && age < 50)
+//{
+//    Console.WriteLine("You are in your 40's");
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//no console writeline .
+
+//because we're out of that range .
+
+//if we are 43:
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//int age = 43;
+
+//if (age >= 40 && age < 50)
+//{
+//    Console.WriteLine("You are in your 40's");
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//we get Console WriteLine "You are in your 40's"
+
+//if we are 39:
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//int age = 39;
+
+//if (age >= 40 && age < 50)
+//{
+//    Console.WriteLine("You are in your 40's");
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//no console writeline, out of range .
+
+//if we are 49:
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//int age = 49;
+
+//if (age >= 40 && age < 50)
+//{
+//    Console.WriteLine("You are in your 40's");
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//we get Console WriteLine "You are in your 40's"
+
+//if we are 40:
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//int age = 40;
+
+//if (age >= 40 && age < 50)
+//{
+//    Console.WriteLine("You are in your 40's");
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//we get Console WriteLine "You are in your 40's"
+
+//if we are 50:
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//int age = 50;
+
+//if (age >= 40 && age < 50)
+//{
+//    Console.WriteLine("You are in your 40's");
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//no console writeline, out of range .
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
