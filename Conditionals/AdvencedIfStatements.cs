@@ -15,6 +15,22 @@ string firstName = Console.ReadLine();
 Console.Write("What is your last name; ");
 string lastName = Console.ReadLine();
 
+if (firstName.ToLower() == "tim" &&
+    lastName.ToLower() == "corey")
+{
+    Console.WriteLine("Hello Professor Corey");
+}
+else if (firstName.ToLower() == "tim" ||
+         lastName.ToLower() == "corey")
+{
+    Console.WriteLine("You have a great part in your name.");
+}
+else
+{
+    Console.WriteLine("Hello Student.");
+}
+
+
 //if (firstName.ToLower() == "tim" &&
 //    lastName.ToLower() == "corey")
 //{
@@ -55,17 +71,19 @@ string lastName = Console.ReadLine();
 
 
 
-int age = 50;
+int age = 73;
 
 // ==, >, >=, <, <=, != (! =)->means not equal
-
-
-
-
-//if (age >= 40 && age < 50)
+//if (age != 43)
 //{
-//    Console.WriteLine("You are in your 40's");
+//    Console.WriteLine("Sorry ,you aren't a great age.");
 //}
+
+if ((age >= 40 && age < 50) ||
+    (age >= 70 && age < 80))
+{
+    Console.WriteLine("You are in your 40's or 70's");
+}
 
 
 
@@ -665,5 +683,266 @@ int age = 50;
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// != (not equal ! =) 
+
+//if we're 50:
 
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//int age = 50;
+
+// ==, >, >=, <, <=, != (! =)->means not equal
+//if (age != 43)
+//{
+//    Console.WriteLine("Sorry ,you aren't a great age.");
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//Console WriteLine "Sorry ,you aren't a great age."
+
+//because we're 50 and our if is not equal to 43.
+
+//if we're 43:
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//int age = 43;
+
+// ==, >, >=, <, <=, != (! =)->means not equal
+//if (age != 43)
+//{
+//    Console.WriteLine("Sorry ,you aren't a great age.");
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//no console writeline .
+
+//because we're 43.
+
+//we'll get console writeline only when age not equal to 43.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//|| (or)
+
+//in || (or) statements in either side is true ,then the whole statement's true .  
+
+//meaning ,either one of those can be true and the whole statement consider to be true:
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//if (firstName.ToLower() == "tim" &&
+//    lastName.ToLower() == "corey")
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//not like the && (and) statements, when both sides have to be true in order the statement to be true .
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Console.Write("What is your first name; ");
+//string firstName = Console.ReadLine();
+
+//Console.Write("What is your last name; ");
+//string lastName = Console.ReadLine();
+
+//if (firstName.ToLower() == "tim" &&
+//    lastName.ToLower() == "corey")
+//{
+//    Console.WriteLine("Hello Professor Corey");
+//}
+//else if (firstName.ToLower() == "tim" ||
+//         lastName.ToLower() == "corey")
+//{
+//    Console.WriteLine("You have a great part in your name.");
+//}
+//else
+//{
+//    Console.WriteLine("Hello Student.");
+//}
+
+//int age = 43;
+
+//if (age >= 40 && age < 50)
+//{
+//    Console.WriteLine("You are in your 40's");
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//lets say "Tim" "Corey"
+
+//we get:
+
+//Console.WriteLine "Hello Professor Corey" and "You are in your 40's" 
+
+//lets say "Tim" "Smith"
+
+//we get:
+
+//Console.WriteLine "You have a great part in your name." and "You are in your 40's" 
+
+//lets say "Sue" "Corey"
+
+//we get:
+
+//Console.WriteLine "You have a great part in your name." and "You are in your 40's"
+
+//lets say "Sue" "Storm"
+
+//we get:
+
+//Console.WriteLine "Hello Student." and "You are in your 40's"
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//we can make these evaluations more complex ,but it's not a good idea.
+
+//for example,we can say age greater than or equal to 40 and age less than 50 and age greater than or equal to 70 and age less than 80:    
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//int age = 43;
+
+//if (age >= 40 && age < 50 && age >= 70 && age < 80)
+//{
+//    Console.WriteLine("You are in your 40's");
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//not recommended ,because this statement'll never evaluates to true. 
+
+//because if the age now's 43 :
+
+//age >= 40 = true
+
+//age < 50 = true
+
+//age >= 70 = false 
+
+//there for this whole thing's false .
+
+//this is also ,age < 80 = true, but the evaluation'll fail.
+
+//we might think that we nee to put || (or) here :
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//int age = 43;
+
+//if (age >= 40 && age < 50 || age >= 70 && age < 80)
+//{
+//    Console.WriteLine("You are in your 40's");
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//it works because it checks:
+
+//age >= 40 and age < 50
+
+//or
+
+//age >= 70 and age < 80 .
+
+//and we get:
+
+//Console WriteLine "You are in your 40's".
+
+//if we put 73:
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//int age = 73;
+
+//if (age >= 40 && age < 50 || age >= 70 && age < 80)
+//{
+//    Console.WriteLine("You are in your 40's or 70's");
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//it works, we get:
+
+//Console WriteLine "You are in your 40's or 70's"
+
+//but we leave it up to the compiler to figure it out what the ands and ors and how they work in order ,and may be we didn't mean that or to be the or.    
+
+//so we use parentheses and say this's the order we want go in:
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//int age = 73;
+
+//if ((age >= 40 && age < 50) || (age >= 70 && age < 80))
+//{
+//    Console.WriteLine("You are in your 40's or 70's");
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//now it'll evaluate this first:
+
+//(age >= 40 && age < 50)
+
+//and say or this second:
+
+//(age >= 70 && age < 80)
+
+//but if we want ,we can say :
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//int age = 73;
+
+//if (age >= 40 && (age < 50 || age >= 70) && age < 80)
+//{
+//    Console.WriteLine("You are in your 40's or 70's");
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//now we say :
+
+//this age >= 40 
+
+//and of those (age < 50 || age >= 70), because of the || (or) 
+
+//and this one age < 80
+
+//we use the parentheses to change the evaluation set .
+
+//so the best way, if we have multiple in, even just 3 things (unless they're all the same type, meaning all're going to be &&'s (and) or all're going to be ||'s (or)) , group them using parentheses:   
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//int age = 73;
+
+//if ((age >= 40 && age < 50) || (age >= 70 && age < 80))
+//{
+//    Console.WriteLine("You are in your 40's or 70's");
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//this way we're very clear ,not only with the compiler, also with who ever comes after us ,they don't have to guess what we meant.   
+
+//also we can make it easy to read ,write like this :
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//int age = 73;
+
+//if ((age >= 40 && age < 50) ||
+//    (age >= 70 && age < 80))
+//{
+//    Console.WriteLine("You are in your 40's or 70's");
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
