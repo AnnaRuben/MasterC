@@ -31,42 +31,49 @@ else
 }
 
 
-//if (firstName.ToLower() == "tim" &&
-//    lastName.ToLower() == "corey")
-//{
-//    Console.WriteLine("Hello Mr. Corey."); 
-//}
-//else if (firstName.ToLower() == "tim")
-//{
-//    Console.WriteLine("Hello, you have a cool first name.");
-//}
-//else if (firstName.ToLower() == "corey")
-//{
-//    Console.WriteLine("You have a great last name.");
-//}
-//else
-//{
-//    Console.WriteLine("Sorry you don't have a cooler name!");
-//}
+
+
+
+
+
+if (firstName.ToLower() == "tim" &&
+    lastName.ToLower() == "corey")
+{
+    Console.WriteLine("Hello Mr. Corey.");
+}
+else if (firstName.ToLower() == "tim")
+{
+    Console.WriteLine("Hello, you have a cool first name.");
+}
+else if (firstName.ToLower() == "corey")
+{
+    Console.WriteLine("You have a great last name.");
+}
+else
+{
+    Console.WriteLine("Sorry you don't have a cooler name!");
+}
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
 
 
-//if (firstName.ToLower() == "tim")
-//{
-//    Console.WriteLine("You have a cool first name.");
-//}
 
-//if (lastName.ToLower() == "corey")
-//{
-//    Console.WriteLine("You have a great last name.");
-//}
-//else
-//{
-//    Console.WriteLine("Sorry your name isn't cooler.");
-//}
+
+if (firstName.ToLower() == "tim")
+{
+    Console.WriteLine("You have a cool first name.");
+}
+
+if (lastName.ToLower() == "corey")
+{
+    Console.WriteLine("You have a great last name.");
+}
+else
+{
+    Console.WriteLine("Sorry your name isn't cooler.");
+}
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -74,10 +81,12 @@ else
 int age = 73;
 
 // ==, >, >=, <, <=, != (! =)->means not equal
-//if (age != 43)
-//{
-//    Console.WriteLine("Sorry ,you aren't a great age.");
-//}
+if (age != 43)
+{
+    Console.WriteLine("Sorry ,you aren't a great age.");
+}
+
+
 
 if ((age >= 40 && age < 50) ||
     (age >= 70 && age < 80))
