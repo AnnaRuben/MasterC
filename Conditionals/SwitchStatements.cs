@@ -11,13 +11,19 @@
 
 
 string firstName = "Sue";
-int age = 43;
+int age = 189;
 
 switch (age)
 {
 	case >= 0 and < 18:
         Console.WriteLine("You are a child.");
-		break
+		break;
+	case >= 18 and < 66:
+        Console.WriteLine("You should have a job.");
+		break;
+	case >= 66:
+        Console.WriteLine("Hopefully you are retired or retiring soon.");
+		break;
 	default:
         Console.WriteLine("Age was not in an expected range.");
 		break;
@@ -432,15 +438,66 @@ switch (age)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //example with age.
 
-//the person is between 0 and 17 .
+//now we have a range .
+
+//and we have to be very careful and think do we cover every single possibility.
 
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//string firstName = "Sue";
+//int age = 43;
+
+//switch (age)
+//{
+//    case >= 0 and < 18:
+//        Console.WriteLine("You are a child.");
+//        break;
+//    case >= 18 and < 66:
+//        Console.WriteLine("You should have a job.");
+//        break;
+//    case >= 66:
+//        Console.WriteLine("Hopefully you are retired or retiring soon.");
+//        break;
+//    default:
+//        Console.WriteLine("Age was not in an expected range.");
+//        break;
+//}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+//if we're 43.
 
+//we get, Console WriteLine "You should have a job."
 
+//if we're 13
 
+//we get, Console WriteLine "You are a child."
 
+//if we're 75
+
+//we get, Console WriteLine "Hopefully you are retired or retiring soon."
+
+//if we're -5
+
+//we get, Console WriteLine "Age was not in an expected range."
+
+//if we're 189
+
+//we get, Console WriteLine "Hopefully you are retired or retiring soon."
+
+//so that's how we can use case statements with ranges ,with and's and or's, with fall through, with a lot of things ,to be able to identify and perform work on our age or based up on our age or what ever variable we pass in here .        
+
+//age ,name ,any thing more complex as well, date, time and so on.   
+
+//case statement aren't quite powerful as if statements. 
+
+//so we have to balance our competing ideas, where if statements're a little more powerful but they aren't quite as compact.     
+
+//so this's also a little bit easier to understand the various evaluations that are going on because they're all in the same spot.   
+
+//but if we want to have additional power or allow additional power later then if else if statements might be a better choice for us to use.    
+
+//so which one to use does depend on the situation, but one of the benefits here in programing's that we have options.   
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
