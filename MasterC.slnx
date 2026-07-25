@@ -2,6 +2,7 @@
   <Folder Name="/Solution Items/">
     <File Path="README.md" />
   </Folder>
+  <Project Path="BestPractice/BestPractice.csproj" Id="3eca7860-8e99-4352-a00e-984fd3a9f332" />
   <Project Path="Conditionals/Conditionals.csproj" Id="70d87fe3-972b-4673-b723-d8eec0c7e3a9" />
   <Project Path="MasterC/CommonVariables.csproj" />
 </Solution>
