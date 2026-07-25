@@ -41,7 +41,11 @@
 
 //For example:
 
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //DateTime today = DateTime.Now;
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 //that is going to be a date and time of right now and that'll put that in to the variable today .  
 
@@ -63,11 +67,19 @@
 
 //in the example we print this out:
 
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Console.WriteLine(today);
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 //and behind the scene it prints to string ,like this: 
 
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Console.WriteLine(today.ToString());
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 //but printing this out ,we have tones of options there, this ToString() have a lot of options, like:   
 
@@ -92,9 +104,13 @@
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //for example birthday:
 
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //DateTime birthday = DateTime.Parse("15/06/1998");
 
 //Console.WriteLine(birthday.ToString());
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 //that is a valid date format, but that is a valid date format for Israel based date because my computer is Israel based and so our local says that day comes first and then month and then year but there's a lot of places in the world where the first spot is for the month and second spot is for the day, and so if we run this exact same code somewhere else and that computer's local say that month comes first in the day format, this would crush because there's no 15th month.                        
 
@@ -105,7 +121,11 @@
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //another way of doing this:
 
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //DateTime birthday = DateTime.ParseExact();
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 //with a ParseExact we can be a little more exact with how we do things.  
 
@@ -113,7 +133,15 @@
 
 //if we choose dd - day of the month (2 digits),meaning if the month is February which is 2, we say 02.  
 
-//but if we choose DateTime birthday = DateTime.ParseExact("06/11/1998", "d/M/yyyy"); ,we choose the format of "d/M/yyyy", this format is more common in the world, not in the US, which is going to evaluate our date "06/11/1998" as the 6th day of November, 1998.          
+//but if we choose:
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//DateTime birthday = DateTime.ParseExact("06/11/1998", "d/M/yyyy");
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//we choose the format of "d/M/yyyy", this format is more common in the world, not in the US, which is going to evaluate our date "06/11/1998" as the 6th day of November, 1998.          
 
 //d is short date 
 
@@ -123,14 +151,23 @@
 
 //and we do have to specify the CultureInfo.InvariantCulture, by adding using System.Globalization;:    
 
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //DateTime birthday = DateTime.ParseExact("06/11/1998", "d/M/yyyy", CultureInfo.InvariantCulture);
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 //meaning don't worry about what culture you're in ,what local you're in, and how they do formatting    
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Console.WriteLine(today.ToString("MMMM dd, yyyy hh:mm tt zzz", CultureInfo.InvariantCulture));
+//DateTime birthday = DateTime.ParseExact("06/11/1998", "d/M/yyyy", CultureInfo.InvariantCulture);
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 //MMMM:
 
@@ -155,7 +192,11 @@
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //DateTime today = DateTime.UtcNow;
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 //right now i'm saying Now which's the local time.  
 
@@ -169,13 +210,21 @@
 
 //so if we storing logs about when things happened and use:        
 
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //DayTime.Now 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 //with out specifying or saving that offset, that could be a problem.
 
 //so there's another option and that's that we can use:   
 
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //DateTime.UtcNow
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 //so that is Coordinated Universal Time (UTC), that's that Grinch meantime, that's the time that all of our time's based up on.       
 

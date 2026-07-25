@@ -55,11 +55,19 @@
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //The result of this code'll be in Int:
 
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //averageAge = (43 + 21 + 62) / 3;
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 //but if we'll write this the same code like that :
 
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //averageAge = (43.0 + 21 + 62) / 3;
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 //that's now a Double, the result of this code'll be a Double = 42.333333333333336 
 
@@ -90,5 +98,9 @@
 
 //It's also the cheapest, the reason is where it rounds the value, they're not ultra precise ,there's some rounding with our Double, there's some rounding with every type, it just how it works ,but this is a little bit more efficient than other types because it does have a little less significant digits, we can use this for almost every operation when it comes to Decimal point numbers ,the exception would be money ,we don't use Doubles to store money because we want to have more precision when it comes to money.                       
 
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //averageAge = 2.3 / 3;
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
