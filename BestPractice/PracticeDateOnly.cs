@@ -8,7 +8,7 @@
 //    {
 //    }
 //}
-using System.Globalization;
+//using System.Globalization;
 
 ////1.1 + 1.2
 //DateOnly evenDate = DateOnly.Parse("15/08/2025");
@@ -42,43 +42,27 @@ using System.Globalization;
 //DateOnly deadLine = DateOnly.FromDateTime(DateTime.Now).AddDays(30);
 ////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-//1
-DateTime loginTime = DateTime.Now;
-////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+////1
+//DateTime loginTime = DateTime.Now;
+//////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-//2
-DateOnly employeeStartDate = DateOnly.Parse("9/15/2023");
-////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+////2
+//DateOnly employeeStartDate = DateOnly.Parse("9/15/2023");
+//////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-//3
-Console.WriteLine(employeeStartDate.ToString("MMMM dd, yyyy", CultureInfo.InvariantCulture));
-////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+////3
+//Console.WriteLine(employeeStartDate.ToString("MMMM dd, yyyy", CultureInfo.InvariantCulture));
+//////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-//4.1
-Console.WriteLine($"Login time and date: {loginTime}");
-////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+////4.1
+//Console.WriteLine($"Login time and date: {loginTime}");
+//////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-//4.2
-Console.WriteLine($"Login just date: {loginTime.Date}");
-////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+////4.2
+//Console.WriteLine($"Login just date: {loginTime.Date}");
+//////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-//4.3
-Console.WriteLine($"The employee start date was: {employeeStartDate}");
-
-
-
+////4.3
 //Console.WriteLine($"The employee start date was: {employeeStartDate}");
-
-//DateTime today = DateTime.UtcNow;
-
-//DateTime birthday = DateTime.Parse("15/06/1998");
-
-//DateTime birthday = DateTime.ParseExact("11/15/1998", "M/d/yyyy", CultureInfo.InvariantCulture);
-
-//DateTime birthday = DateTime.ParseExact("06/11/1998", "d/M/yyyy", CultureInfo.InvariantCulture);
-
-//Console.WriteLine(birthday.ToString());
-
-//Console.WriteLine(today.ToString("MMMM dd, yyyy hh:mm tt zzz", CultureInfo.InvariantCulture));
