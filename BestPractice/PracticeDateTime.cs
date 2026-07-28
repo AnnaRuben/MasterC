@@ -26,9 +26,6 @@ using System.Globalization;
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-
-
-
 //1-1.1
 DateTime today = DateTime.Now;
 Console.WriteLine(today);
@@ -53,48 +50,47 @@ Console.WriteLine(myCurrentTimeUtc);
 
 //2-2.1 + 2.2
 Console.WriteLine(today.ToString("dd/MM/yy", CultureInfo.InvariantCulture));
+Console.WriteLine(today.ToString("HH:mm:ss", CultureInfo.InvariantCulture));
 
-Console.WriteLine(today.ToString("HH:m:s zzz", CultureInfo.InvariantCulture));
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 //2.3
-Console.WriteLine(today.ToString("MMMM dd, yyyy HH:mm zz", CultureInfo.InvariantCulture));
+// hh = 12-hour clock, tt = AM/PM, zzz = full timezone offset (+03:00)
+Console.WriteLine(today.ToString("MMMM dd, yyyy hh:mm tt zzz", CultureInfo.InvariantCulture));
+
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 //3-3.1
 DateTime lastMonth = DateTime.Parse("15/06/1998");
 Console.WriteLine(lastMonth);
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//3-3.2
+// DateTime monthDayYear = DateTime.Parse("06/15/1998"); // This will throw an exception in IL culture.
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//4-4.1
+// The format string MUST match the input string exactly, including the '|' character.
+DateTime dayMonthYear = DateTime.ParseExact("1998|06|15", "yyyy|MM|dd", CultureInfo.InvariantCulture);
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//4-4.2
+DateTime monthInWords = DateTime.ParseExact("06/11/1998", "dd/MM/yyyy", CultureInfo.InvariantCulture);
+Console.WriteLine(monthInWords.ToString("MMMM dd, yyyy", CultureInfo.InvariantCulture));
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//5-5.1
+// Match the exact input format, including hyphens '-' and 24-hour time 'HH'.
+DateTime parseDateAndTime = DateTime.ParseExact("2026-12-31 23:59" , "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture);
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//5-5.2
+// String Interpolation extracting specific formats directly from the variable.
+Console.WriteLine($"The error occurred on {parseDateAndTime:dd} of {parseDateAndTime.ToString("MMMM", CultureInfo.InvariantCulture)}, exactly at {parseDateAndTime:hh:mm tt}"); 
+
 Console.ReadLine();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Console.WriteLine(today.ToString("MMMM dd, yyyy hh:mm tt zzz", CultureInfo.InvariantCulture));
-
-//DateTime today = DateTime.UtcNow;
-
-// DateTime birthday = DateTime.Parse("15/06/1998");
-//
-// DateTime birthday = DateTime.ParseExact("11/15/1998", "M/d/yyyy", CultureInfo.InvariantCulture);
-//
-// DateTime birthday = DateTime.ParseExact("06/11/1998", "d/M/yyyy", CultureInfo.InvariantCulture);
-//
-// Console.WriteLine(birthday.ToString());
-//
-// Console.WriteLine(today.ToString("MMMM dd, yyyy hh:mm tt zzz", CultureInfo.InvariantCulture));
-
-
