@@ -1,7 +1,7 @@
 //1
 //Variable definition and naming:
 
-decimal accountBalance = 4500.75M;
+//decimal accountBalance = 4500.75M;
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -16,9 +16,9 @@ decimal accountBalance = 4500.75M;
 //The user has just received a credit.
 //Add the amount to their account balance: 150.50.
 
-accountBalance += 150.50M;
+//accountBalance += 150.50M;
 
-Console.WriteLine(accountBalance);
+//Console.WriteLine(accountBalance);
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 //4
@@ -38,7 +38,7 @@ Console.WriteLine(accountBalance);
 //Create a variable to hold a customer's current account balance.
 //Remember which Type data type we should use when we work with money and need maximum precision (up to 28 decimal places), even though it requires a larger memory allocation compared to other types.
 
-decimal customerAccountBalance; 
+//decimal customerAccountBalance; 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -47,7 +47,7 @@ decimal customerAccountBalance;
 //Writing emphasis: Remember to use the exact suffix at the end of the number.
 //Otherwise, the compiler will recognize the number as Double by default.
 
-customerAccountBalance = 10500.50M;
+//customerAccountBalance = 10500.50M;
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -55,11 +55,11 @@ customerAccountBalance = 10500.50M;
 // The customer made a deposit of `200.75` and was then charged a fee of `1.50`.
 //Update the variable using arithmetic operations (addition and subtraction - the cheapest and most common operations for this data type, unlike multiplication and division). Finally, print the result to the console.
 
-customerAccountBalance += 200.75M;
+//customerAccountBalance += 200.75M;
 
-customerAccountBalance -= 1.50M;
+//customerAccountBalance -= 1.50M;
 
-Console.WriteLine(customerAccountBalance);
+//Console.WriteLine(customerAccountBalance);
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
