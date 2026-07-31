@@ -122,23 +122,3 @@
 
 //so that's why we don't see a lot of built in math stuff around Decimal, because Decimal primarily holds things like money and astronomical units, otherwise it's just too expensive to work with and so we use Doubles            
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
