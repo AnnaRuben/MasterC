@@ -21,11 +21,6 @@
 //we have asked for the age now
 //age = 0;
 
-
-
-
-
-
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Examples and Explanations:
 
@@ -37,35 +32,35 @@
 
 //and the reason we have Null is that indicate that there's nothing here.   
 
-//for instance, we have an age variable, the default value for that is 0, what if we have'nt yet asked the person for their age ? should we have a 0 in that value ? probably not, because technically 0 is an age.           
+//for instance, we have an age variable, the default value for that is 0, what if we haven't yet asked the person for their age ? should we have a 0 in that value ? probably not, because technically 0 is an age.           
 
 //we may say ,no! 0 is not an age! 
 
-//but when a new born is first born, what is their age in years ? because they hit their first birthday 365 days after they were born ,so what is their age in years up until that point ? well .... probably 0.           
+//but when a newborn is firstborn, what is their age in years ? because they hit their first birthday 365 days after they were born ,so what is their age in years up until that point ? well .... probably 0.           
 
-//in the US we say things like "they're 1 week old", "they're 2 months old", yes but they're not yet 1 and we're using Integers here for years because that's how we talk.      
+//in the US we say things like "they're 1 week old", "they're 2 months old", yes but they're not yet 1 ,and we're using Integers here for years because that's how we talk.      
 
-//we don't say "I'm 3.45 years old", in general we don't do that ,we don't say 3.5, we don't say "I'm 43.25 years old", we say 43 or we say 3, and so we use in our common parlance Integers to indicate our year, we don't call them Integers because we don't even know that's what an Integer is, we say whole numbers or just give a number.                       
+//we don't say "I'm 3.45 years old", in general we don't do that ,we don't say 3.5, we don't say "I'm 43.25 years old", we say 43 ,or we say 3, and so we use in our common parlance Integers to indicate our year, we don't call them Integers because we don't even know that's what an Integer is, we say whole numbers or just give a number.                       
 
-//so if an age could be 0 and we have'nt yet asked the user for their age ,could this be confusing ? because right now, right here, we haven't asked for the age yet:        
+//so if an age could be 0 ,and we haven't yet asked the user for their age ,could this be confusing ? because right now, right here, we haven't asked for the age yet:        
 
 //int age = 0;
 
-//and if it's a baby and we have asked for the age now:
+//and if it's a baby ,and we have asked for the age now:
 
 //age = 0;
 
 //and the difference is nothing.  
 
-//so how do we tell the system whether or not this is a valid age or a not yet an age we've asked for?      
+//so how do we tell the system whether or not this is a valid age or ,a ,not yet an age we've asked for?      
 
-//well that's where Null comes to the picture, because Null allows us to say "this lacks a value, it doesn't have a value yest".          
+//well that's where Null comes to the picture, because Null allows us to say "this lacks a value, it doesn't have a value yet".          
 
 //normally we think to say: 
 
 //int age = null;
 
-//but an age is'nt Nullable.  
+//but an age isn't Nullable.  
 
 //meaning, it doesn't have the capacity to store a lack of value.   
 
@@ -85,13 +80,13 @@
 
 //so this is really useful for data, because in the database we often have the concept of Null.        
 
-//if we don't have a value for a column, we don't put a value there ,we say Nullable and we say that column value doesn't have a value yet there for it's Null.         
+//if we don't have a value for a column, we don't put a value there ,we say Nullable ,and we say that column value doesn't have a value yet there for it's Null.         
 
 //so when it comes to putting that data in to C#, we don't want to than convert that:     
 
 //age = 0;
 
-//to a default value that isn't Null, because then we say that data back'll now over write the Null value with a value that looks real.           
+//to a default value that isn't Null, because then we say that data back'll now overwrite the Null value with a value that looks real.           
 
 //so we want to be able to keep that Null going back and forth ,so we use Nullable characters.     
 
@@ -103,7 +98,7 @@
 
 //we can do this with all the types, like with int?, bool?, double?
 
-//so ,this double? battingAverage = null; is Nullable average because we don't know yet what the average is, there for we aren't going to put a number here like 0 where the compiler'll say "wait ,your batting average is 0?, that isn't great!"      
+//so ,this double? battingAverage = null; is Nullable average because we don't know yet what the average is, therefor we aren't going to put a number here like 0 where the compiler'll say "wait ,your batting average is 0?, that isn't great!"      
 
 //no! because 0 could be a valid number, we're going to say Null until you give us a valid number, which could be 0.     
 
@@ -122,7 +117,7 @@
 
 //the compiler allows it because string is a different type, it's what actually called a Struct, but what that means for us is the fact that by default we can put Nulls in to Strings with out marking them as Nullable.           
 
-//how ever, there's a new feature in C# that says we should probably do a check on that and may at least throw a massive jop saying that's not a great thing.            
+//however, there's a new feature in C# that says we should probably do a check on that and may at least throw a massive jop saying that's not a great thing.            
 
 //Because in this case we aren't saying that we're expecting a Null value here because it's a string ,it isn't Nullable string so even though it technically can store a Null, we aren't saying we're expecting a Null, there for Visual Studio says that it might be a bug, and we realize that it might and Visual Studio is right, and we realize that we're putting Null in to a value that we're saying that is required and there fo that's a problem ,and that could change our code, or we can put a question mark like this:                     
 
