@@ -106,74 +106,76 @@ Console.WriteLine(restoredTotal.ToString());
 // Explanation: Every time we add a bit, we double the amount of numbers we can hold. If 3 bits hold 8 numbers, multiplying by 2 means 4 bits can hold 16 numbers.
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-
-
-
 //Practical Exercise: Advanced Int Manipulations
 
 //Part 1: From String to Int (The API Payload)
-// In modern web applications, data often comes from the front-end as a **string**.
-// We have a string representing the number of likes on a post:
-//
-//     ```csharp
-//     **string likesFromFrontEnd = "8500";**
-//
-//     ```
-//
-// 1. **Parse this string** into a new **int** variable called 'parsedLikes'.
+//In modern web applications, data often comes from the front end as a string.
+//We have a string representing the number of likes on a post:
+
+string likesFromFrontEnd = "8500";
+
+//Parse this string into a new int variable called 'parsedLikes'.
+
+int parsedLikes = int.Parse(likesFromFrontEnd);
+Console.WriteLine(parsedLikes);
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-//     Part 2: The Modulo Operator (%) - Handling Remainder
-//     You saw that dividing **Int** truncates the decimal point.
-//
-//     But what if we need to know what is left over?
-//
-//     We have 100 background tasks and 3 servers to process them.
-//
-//     ```csharp
-//     **int totalTasks = 100;
-//
-// int serverCount = 3;**
-//     ```
-//
-// 2. Use the modulo operator (%) to calculate how many tasks are left after dividing them equally among the 3 servers.
-//     Store the result in a variable called 'leftoverTasks' and print it.
+//Part 2: The Modulo Operator (%) - Handling Remainder
+//You saw that dividing Int truncates the decimal point.
+//But what if we need to know what is left over?
+//We have 100 background tasks and 3 servers to process them.
+
+int totalTasks = 100;
+
+int serverCount = 3;
+
+//2. Use the modulo operator (%) to calculate how many tasks are left after dividing them equally among the 3 servers.
+//Store the result in a variable called 'leftoverTasks' and print it.
+
+int leftoverTasks = totalTasks % serverCount;
+Console.WriteLine(leftoverTasks);
+
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-//     Part 3: Muscle Memory - Promotion and Decrement
-// In 2026, we don't write
-//
-//     ```csharp
-//     **variable = variable + 1
-// or even for simple counting
-// variable += 1
-// int activeConnections = 50;**
-//
-//     ```
-//
-// 3. A new user just connected.
-//
-//     Increment 'activeConnections' by exactly 1 using the shortest and most professional syntax possible.
-//
-// 4. A user suddenly disconnected.
-//
-//     Decrement the variable by exactly 1 using the shortest syntax possible.
+//Part 3: Muscle Memory - Promotion and Decrement
+//In 2026, we don't write
+//variable = variable + 1
+//or even for simple counting
+//variable += 1
+int activeConnections = 50;
+
+//3. A new user just connected.
+//Increment 'activeConnections' by exactly 1 using the shortest and most professional syntax possible.
+
+//The truth is, I don't know anything else other than:
+
+activeConnections++;
+Console.WriteLine(activeConnections);
+
+//4. A user suddenly disconnected.
+//Decrement the variable by exactly 1 using the shortest syntax possible.
+
+//And I don't know anything else other than:
+
+activeConnections--;
+Console.WriteLine(activeConnections);
+
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-//     Part 4: Casting - Forced Conversions
-//     The AI ​​model analyzed our system and returned a confidence score as a 'double' .
-//
-//     ```csharp
-//     **double aiConfidenceScore = 98.9;**
-//     ```
-//
-// 5. We need to store this in our DB as a simple Int.
-//     Do an Explicit Cast to force this 'double' into a new 'int' variable called 'finalScore'.
-//
-// 6. Add an explanatory note: What happens to the .9?
-//
-//     Does the Cast round the number up to 99, or truncate it to 98?
+//Part 4: Casting - Forced Conversions
+//The AI ​​model analyzed our system and returned a confidence score as a 'double' .
 
+double aiConfidenceScore = 98.9;
 
+//5. We need to store this in our DB as a simple Int.
+//Do an Explicit Cast to force this 'double' into a new 'int' variable called 'finalScore'.
 
+int finalScore = (int)aiConfidenceScore;
+Console.WriteLine(finalScore);
+
+//6. Add an explanatory note: What happens to the .9?
+//Does the Cast round the number up to 99, or truncate it to 98?
+
+//The Cast operation does not round the number to 99.
+//It simply truncates everything after the decimal point.
+//So the result will be 98.
