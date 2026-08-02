@@ -58,12 +58,6 @@
 //<Nullable>enable</Nullable>
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-
-
-
-
-
 //Exercise 2 – Employee Management System
 
 //Background
@@ -76,25 +70,25 @@
 //If the information is not yet known – it must be `null`.
 
 //1. Employee ID (`int`)
-int? employeeId = null;
+//int? employeeId = null;
 
 //2. Years of experience (`int`)
-int? yearsOfExperience = null;
+//int? yearsOfExperience = null;
 
 //3. Monthly bonus (`decimal`)
-decimal? monthlyBonus = null;
+//decimal? monthlyBonus = null;
 
 //4. Performance score (`double`)
-double? performanceScore = null;
+//double? performanceScore = null;
 
 //5. Is manager (`bool`)
-bool? isManager = null;
+//bool? isManager = null;
 
 //6. Phone number (`string`)
-string? phoneNumber = null;
+//string? phoneNumber = null;
 
 //7. Email (`string`)
-string? email = null;
+//string? email = null;
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -103,13 +97,13 @@ string? email = null;
 //Update only the following variables:
 
 //Employee ID → 1045
-employeeId = 1045;
+//employeeId = 1045;
 
 //Years of experience → 8
-yearsOfExperience = 8;
+//yearsOfExperience = 8;
 
 //Email → any address
-email = "shaked12072014@gmail.com";
+//email = "shaked12072014@gmail.com";
 
 //All other variables should remain `null`.
 
@@ -134,10 +128,10 @@ email = "shaked12072014@gmail.com";
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-if (phoneNumber != null)
-{
-    Console.WriteLine("Phone number exists");
-}
+// if (phoneNumber != null)
+// {
+//     Console.WriteLine("Phone number exists");
+// }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -145,10 +139,10 @@ if (phoneNumber != null)
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-if (performanceScore != null)
-{
-    Console.WriteLine("Performance score exists.");
-}
+// if (performanceScore != null)
+// {
+//     Console.WriteLine("Performance score exists.");
+// }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -156,10 +150,10 @@ if (performanceScore != null)
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-if (isManager != null)
-{
-    Console.WriteLine("Manager information exists.");
-}
+// if (isManager != null)
+// {
+//     Console.WriteLine("Manager information exists.");
+// }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -181,10 +175,10 @@ if (isManager != null)
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-if (email == null)
-{
-    Console.WriteLine("Email is missing.");
-}
+// if (email == null)
+// {
+//     Console.WriteLine("Email is missing.");
+// }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -192,10 +186,10 @@ if (email == null)
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-if (yearsOfExperience == null)
-{
-    Console.WriteLine("Years of experience information is missing.");
-}
+// if (yearsOfExperience == null)
+// {
+//     Console.WriteLine("Years of experience information is missing.");
+// }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -203,24 +197,24 @@ if (yearsOfExperience == null)
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-if (employeeId == null)
-{
-    Console.WriteLine("Employee ID is missing.");
-}
+// if (employeeId == null)
+// {
+//     Console.WriteLine("Employee ID is missing.");
+// }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 //Task 5 – Replace null with real value
 //You have the following variables:
-int? vacationDays = null;
-decimal? salary = null;
-bool? passedTraining = null;
+// int? vacationDays = null;
+// decimal? salary = null;
+// bool? passedTraining = null;
 
 //Update them to real values ​​of your choice.
 
-vacationDays = 14;
-salary = 30000m;
-passedTraining = true;
+// vacationDays = 14;
+// salary = 30000m;
+// passedTraining = true;
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -229,24 +223,24 @@ passedTraining = true;
 //Return the following variables to `null`.
 
 //phoneNumber
-phoneNumber = null;
+//phoneNumber = null;
 
 //email
-email = null;
+//email = null;
 
 //salary
-salary = null;
+//salary = null;
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 //Task 7 – Finding the variables with missing information
 //Look at the following list:
 
-int? departmentNumber = null;
-bool? hasParkingSpot = true;
-double? productivityScore = null;
-string? officeLocation = "Building A";
-decimal? yearlyBonus = null;
+// int? departmentNumber = null;
+// bool? hasParkingSpot = true;
+// double? productivityScore = null;
+// string? officeLocation = "Building A";
+// decimal? yearlyBonus = null;
 
 //Variables containing null:
 //departmentNumber

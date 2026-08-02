@@ -16,16 +16,6 @@
 //Console.WriteLine($"Hello {firstName} {lastName}");
 //Console.WriteLine(filePath);
 //Console.WriteLine(testString);
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-
-
-
-
-
-
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Examples and Explanation
@@ -216,7 +206,7 @@
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //string Interpolation:
 
-//meaning that we're going to put a $ infront , it means that we're going to mix a little bit of code with our string:
+//meaning that we're going to put a $ in front , it means that we're going to mix a little bit of code with our string:
 
 //Console.WriteLine($"Hello {firstName} {lastName}");
 
@@ -224,7 +214,7 @@
 
 //"Hello {firstName} {lastName}"
 
-//it means what ever inside the {}, is a C# code and not as an actual string.
+//it means whatever inside the {}, is a C# code and not as an actual string.
 
 //every time that we work with a string ,manipulating it or changing it in some way, it makes a full copy of a string, that can get expensive over time    
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
