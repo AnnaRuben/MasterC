@@ -76,31 +76,24 @@
 //If the information is not yet known – it must be `null`.
 
 //1. Employee ID (`int`)
-
 int? employeeId = null;
 
 //2. Years of experience (`int`)
-
 int? yearsOfExperience = null;
 
 //3. Monthly bonus (`decimal`)
-
 decimal? monthlyBonus = null;
 
 //4. Performance score (`double`)
-
 double? performanceScore = null;
 
-// 5. Is manager (`bool`)
-
+//5. Is manager (`bool`)
 bool? isManager = null;
 
-// 6. Phone number (`string`)
-
+//6. Phone number (`string`)
 string? phoneNumber = null;
 
-// 7. Email (`string`)
-
+//7. Email (`string`)
 string? email = null;
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -108,17 +101,14 @@ string? email = null;
 //Task 2 – Some information has arrived
 //Now some information has been received.
 //Update only the following variables:
-//
-//Employee ID → 1045
 
+//Employee ID → 1045
 employeeId = 1045;
 
 //Years of experience → 8
-
 yearsOfExperience = 8;
 
 //Email → any address
-
 email = "shaked12072014@gmail.com";
 
 //All other variables should remain `null`.
@@ -146,7 +136,7 @@ email = "shaked12072014@gmail.com";
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 if (phoneNumber != null)
 {
-    Console.WriteLine("The phone number is correct.");
+    Console.WriteLine("Phone number exists");
 }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -157,7 +147,7 @@ if (phoneNumber != null)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 if (performanceScore != null)
 {
-    Console.WriteLine("Your performance score is amazing!");
+    Console.WriteLine("Performance score exists.");
 }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -168,7 +158,7 @@ if (performanceScore != null)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 if (isManager != null)
 {
-    Console.WriteLine("You are the manager!");
+    Console.WriteLine("Manager information exists.");
 }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -193,7 +183,7 @@ if (isManager != null)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 if (email == null)
 {
-    Console.WriteLine("Your email address doesn't exist!");
+    Console.WriteLine("Email is missing.");
 }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -204,7 +194,7 @@ if (email == null)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 if (yearsOfExperience == null)
 {
-    Console.WriteLine("You don't have any experience!");
+    Console.WriteLine("Years of experience information is missing.");
 }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -215,96 +205,124 @@ if (yearsOfExperience == null)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 if (employeeId == null)
 {
-    Console.WriteLine("You don't work here!");
+    Console.WriteLine("Employee ID is missing.");
 }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 //Task 5 – Replace null with real value
 //You have the following variables:
-//int? vacationDays = null;
-//decimal? salary = null;
-//bool? passedTraining = null;
+int? vacationDays = null;
+decimal? salary = null;
+bool? passedTraining = null;
 
 //Update them to real values ​​of your choice.
 
-int? vacationDays = 14;
-
-decimal? salary = 30000;
-
-bool? isPassedTraining = true; 
+vacationDays = 14;
+salary = 30000m;
+passedTraining = true;
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 //Task 6 – Return value to null
 //Now that the employee has left the company:
 //Return the following variables to `null`.
-//
-//phoneNumber
 
+//phoneNumber
 phoneNumber = null;
 
 //email
-
 email = null;
 
 //salary
-
 salary = null;
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 //Task 7 – Finding the variables with missing information
 //Look at the following list:
-//
-//int? departmentNumber = null;
-//bool? hasParkingSpot = true;
-//double? productivityScore = null;
-//string? officeLocation = "Building A";
-//decimal? yearlyBonus = null;
-
-//Without running the program, write in the comment:
-//Which variables contain `null`.
 
 int? departmentNumber = null;
+bool? hasParkingSpot = true;
 double? productivityScore = null;
+string? officeLocation = "Building A";
 decimal? yearlyBonus = null;
 
-//Which variables already contain a real value.
+//Variables containing null:
+//departmentNumber
+//productivityScore
+//yearlyBonus
 
-bool? hasParkingSpot = true;
-string? officeLocation = "Building A";
+//Variables containing real values:
+//hasParkingSpot
+//officeLocation
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 //Small challenge
 
 //For each of the following variables, write next to it whether you think it should be Nullable or not.
-//int employeeNumber - Not
-//int age - Not
-//bool hasDrivingLicense - Not
-//decimal salary - Not
-//string firstName - Not
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//int employeeNumber - Usually NOT Nullable.
+//Every employee should eventually have a unique employee number.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//int age - Nullable.
+//When the employee is first created, we may not know their age yet.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//bool hasDrivingLicense - Nullable.
+//We may not have asked this question yet.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//decimal salary - Nullable.
+//The salary may not have been determined yet.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//string firstName - Usually NOT Nullable.
+//A person normally has a first name.
+//Although in some systems it could temporarily be nullable.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//string country - Nullable.
+//The employee may not have entered their country yet.
 //string country - Not
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-//Briefly explain why you chose this.
-//Because an employeeNumber, an age, hasDrivingLicense,  salary, firstName, country, aren't Nullable.  
-//meaning, they don't have the capacity to store a lack of value.   
-//so we use this question mark at the end of the variables. 
-
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Brainstorming Challenge (no code)
 //In each of the following cases, write whether you think it is better to use `null` or another value:
 //Explain why in each section.
-//1. A test score that has not yet been entered. - better to use `null`, because it'll in the Future.
-//2. The number of children of a person for whom there is no information yet. - better to use `null`
-//3. A bank account balance that is truly zero. - better to use `null`
-//4. The height of a person who has not yet been measured. - better to use `null`
-//5. An email address that the user has not yet entered. - better to use `null`
-// ---
-//
-// This exercise covers new things that did not appear in your first exercise:
-//
-// * `== null` and `!= null` tests.
-// * Updating a value from `null` to a true value.
-// * Reverting a value back to `null`.
-// * Identifying variables that are missing information.
-// * Thinking about when it is appropriate to use `null` and when not.
-// * Reinforcing the understanding that `null` is **lack of information**, and not a value like `0`, `false`, or an empty string.
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//1. A test score that has not yet been entered - Use null.
+//Reason: The score is currently unknown.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//2. Number of children when no information has been collected - Use null.
+//Reason: The information is missing.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//3. A bank account balance that is actually zero - Use 0, NOT null.
+//Reason: We know the balance and it is exactly zero.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//4. Height that has not yet been measured - Use null.
+//Reason: The value is currently unknown.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//5. An email address that the user has not entered yet.
+//Use null.
+//Reason: The email has not been provided yet.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
