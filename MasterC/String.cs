@@ -233,7 +233,7 @@
 
 //the problem is that there are some characters that C# doesn't know what we want to do there, so there is an escape character, if we want line in return, we add \n , it means new line, we have escape character \ for new line n.
 
-//if we want to use the actual escape character as just a regular character, we put \\ (2 escape characters),because we have an escape character that is a special character and we use an escape character again, it means that the special thing \ character does is put \ character in to the string.
+//if we want to use the actual escape character as just a regular character, we put \\ (2 escape characters),because we have an escape character that is a special character ,and we use an escape character again, it means that the special thing \ character does is put \ character in to the string.
 
 //another option is to put @ symbol :
 
