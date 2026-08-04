@@ -85,19 +85,24 @@
 //Put them in:
 //25
 //90210
-
 //age = "25";
 //zipCode = "90210";
 
 //Print them.
-//Console.WriteLine($"{age} {zipCode}");
+
+// string age = string.Empty;
+// string zipCode = string.Empty;
+//
+// age = "25";
+// zipCode = "90210";
+//
+// Console.WriteLine($"{age} {zipCode}");
 
 //Question:
 //Are these numbers or Strings?
-//these Are numbers as Strings.
-
 //Why?
-//Because we get them from the user as Strings.
+//The variables have been defined as string.
+//The values ​​are in quotes: "25" and "90210".
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 //Exercise 5 - Concatenation
@@ -164,7 +169,7 @@
 //Print:
 //John Smith lives in New York.
 //Using String Interpolation.
-//Console.WriteLine($"{firstName} {lastName} lives in {city}");
+//Console.WriteLine($"{firstName} {lastName} lives in {city}.");
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 //Exercise 9 - Empty String
@@ -195,7 +200,7 @@
 
 //Hint:
 //\n
-//Console.WriteLine("Hello \nWorld!");
+//Console.WriteLine("Hello \nWorld");
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 //Exercise 11 - Quotes
@@ -212,8 +217,9 @@
 //C:\Temp\Demo
 //Without using `@`.
 
-//string saveToFilePath = string.Empty;
-//saveToFilePath = "C:/Temp/Demo";
+// string saveToFilePath = string.Empty;
+
+// saveToFilePath = "C:\\Temp\\Demo";
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 //Exercise 13 - Verbatim String
@@ -221,8 +227,9 @@
 //but this time use:
 //@
 
-//string saveToFilePath = string.Empty;
-//saveToFilePath = @"C:/Temp/Demo";
+// string saveToFilePath = string.Empty;
+
+// saveToFilePath = @"C:\Temp\Demo";
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 //Exercise 14 - Mixed Verbatim + Interpolation
@@ -309,11 +316,11 @@
 //StrFirstName = "Tim";
 //lastname = "Corey";
 
-//Console.WriteLine(StrFirstName+lastname);
-//Console.WriteLine($"Hello"+StrFirstName);
-
-//string file = "C:\Temp\Test";
-//Console.WriteLine(file);
+// Console.WriteLine(StrFirstName+lastname);
+// Console.WriteLine($"Hello"+StrFirstName);
+//
+// string file = "C:\Temp\Test";
+// Console.WriteLine(file);
 
 //Don't correct.
 //Just write down all the mistakes.
@@ -357,33 +364,56 @@
 //* Do not use Hungarian Notation
 //* Use `Console.WriteLine`
 
+// string firstName = string.Empty;
+// string lastName = string.Empty;
+// string favoriteColor = string.Empty;
+// string favoriteFood = string.Empty;
+// string city = string.Empty;
+// string filePath = string.Empty;
 
+// firstName = "John";
+// lastName = "Smith";
+// favoriteColor = "Blue";
+// favoriteFood = "Pizza";
+// city = "New York";
+// filePath = $@"C:\Users\{firstName}\Documents";
 //
-// ## Bonus Challenge (Tim Corey style)
-//
-// Write a program that displays a business card:
-//
-// ```
-// --------------------------------
-//
-// Name: John Smith
-//
-// City: New York
-//
-// Favorite Color: Blue
-//
-// Favorite Food: Pizza
-//
-// Email: john.smith@gmail.com
-//
-// --------------------------------
-// ```
-//
-// Use:
-//
-// * `string.Empty`
-// * String Interpolation
-// * `\n`
-// * At least once In `$@`
-//
-// If you solve all these exercises without the help of a solution, you will have an excellent understanding of the whole **string** topic at the level that Tim Corey teaches at the beginning of his C# course.
+// Console.WriteLine(
+//     $"Hello {firstName} {lastName}!\n" +
+//     $"Your favorite color is {favoriteColor}.\n" +
+//     $"Your favorite food is {favoriteFood}.\n" +
+//     $"You live in {city}.\n" +
+//     $"Your file is stored at:\n" +
+//     $"{filePath}");
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Bonus Challenge (Tim Corey style)
+//Write a program that displays a business card:
+//--------------------------------
+//Name: John Smith
+//City: New York
+//Favorite Color: Blue
+//Favorite Food: Pizza
+//Email: john.smith@gmail.com
+//--------------------------------
+//Use:
+//*`string.Empty`
+//*String Interpolation
+//*`\n`
+//*At least once In `$@`
+//If you solve all these exercises without the help of a solution, you will have an excellent understanding of the whole string topic at the level that Tim Corey teaches at the beginning of his C# course.
+
+// string name = string.Empty;
+// string favoriteColor =  string.Empty;
+// string favoriteFood =   string.Empty;
+// string city =  string.Empty;
+// string email = string.Empty;
+
+// name = "John Smith"; 
+// favoriteFood = "Blue";
+// favoriteColor = "Pizza";
+// city = "New York";
+// email = @"john.smith@gmail.com";
+
+// Console.WriteLine($"Name: {name} \nCity: {city} \nFavorite Color: {favoriteColor} \nFavorite Food: {favoriteFood} \nEmail: {email}");
+
