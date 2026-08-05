@@ -16,17 +16,6 @@
 //Console.WriteLine(openAt);
 //Console.WriteLine(rightNow);
 
-
-
-
-
-
-
-
-
-
-
-
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Examples and Explanation
 //represents only the time portion of a value  

@@ -417,3 +417,279 @@
 
 // Console.WriteLine($"Name: {name} \nCity: {city} \nFavorite Color: {favoriteColor} \nFavorite Food: {favoriteFood} \nEmail: {email}");
 
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 1
+//Part A — Defining, Assigning and Using a Variable
+//Exercise 1 — The First Variable
+
+//Create a `string` variable called `firstName`.
+// First define it using:
+//string.Empty
+// Then enter your name into it and print it.
+//Example Result
+//Anna
+
+// string firstName = string.Empty;
+// firstName = "Anna";
+// Console.WriteLine(firstName);
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Exercise 2 — Value at the time of definition
+//Create a variable called `lastName`.
+//Don't use two lines this time.
+//Enter the last name directly at the time of variable definition.
+//Print it.
+
+// string lastName = "Rubenchik";
+// Console.WriteLine(lastName);
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Exercise 3 — Two Variables
+
+//Create the following variables:
+//`firstName`
+// `lastName`
+//Insert values ​​into them and print each on a separate line.
+//Sample Result
+//Tim
+//Corey
+
+// string firstName = string.Empty;
+// string lastName = string.Empty;
+
+// firstName = "Tim";
+// lastName = "Corey";
+
+// Console.WriteLine($"{firstName}\n" +
+//                   $"{lastName}");
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Exercise 4 — A number that is actually a string
+//Create a `string` variable called `employeeNumber`.
+//Enter into it:
+//12345
+// Make sure the value is in quotes.
+//Print it.
+//> Goal: To understand that `"12345"` is a `string`, even though it looks like a number.>
+
+// string employeeNumber = string.Empty;
+// employeeNumber = "12345";
+// Console.WriteLine(employeeNumber);
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Exercise 5 — Overriding a Value
+
+//Create a variable called `favoriteFood`.
+//First enter:
+//Pizza
+//Then, before printing, change the value to:
+//Pasta
+//Print the variable.
+
+//Thinking Question
+//Which value will be printed — `Pizza` or `Pasta`?
+//Write the answer as a comment above `Console.WriteLine`.
+
+// string favoriteFood = string.Empty;
+// favoriteFood = "Pizza";
+
+// //The value will be printed is `Pasta`.
+// favoriteFood = "Pasta";
+// Console.WriteLine(favoriteFood);
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Part 2 — Correct Variable Names
+//Exercise 6 — Correcting Names
+// The following code works in terms of data types, but the variable names are unclear:
+// string a = "Anna";
+// string b = "Rubenchik";
+// string c = "Blue";
+// string d = "Pizza";
+// Rewrite the code with clear variable names.
+//Finally, print each variable on a separate line.
+//> This exercise checks only the variable names, not the code structure.>
+
+// string firstName = "Anna";
+// string lastName = "Rubenchik";
+// string favoriteColor = "Blue";
+// string favoriteFood = "Pizza";
+//
+// Console.WriteLine($"{firstName} \n" +
+//     $"{lastName} \n" +
+//     $"{favoriteColor} \n" +
+//     $"{favoriteFood}");
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Exercise 7 — Fixing `camelCase`
+
+//Fix the variable names to follow the `camelCase` rules:
+// string FirstName = "John";
+// string lastname = "Smith";
+// string FAVORITECOLOR = "Green";
+// string Favoritefood = "Hamburger";
+
+// string firstName = "John";
+// string lastName = "Smith";
+// string favoriteColor = "Green";
+// string favoriteFood = "Hamburger";
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Exercise 8 — Names that are too long
+
+//Replace the long names with clear but shorter names:
+//string firstNameForTheUserWhoIsUsingOurApplication = "Sarah";
+//string favoriteColorForTheUserWhoIsUsingOurApplication = "Purple";
+//Print a sentence that includes both values.
+
+// string firstName = "Sarah";
+// string favoriteColor = "Purple";
+
+// Console.WriteLine($"Hey! My name is {firstName} and my favorite color is {favoriteColor}.");
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Exercise 9 — Removing Hungarian Notation and Abbreviations
+
+//Fix the variable names:
+//string strFirstName = "Tim";
+//string strLastName = "Corey";
+//string fColor = "Blue";
+// The new names must not include the variable type or unclear abbreviations.
+
+// string firstName = "Tim";
+// string lastName = "Corey";
+// string favoriteColor = "Blue";
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Part 3 — String Concatenation
+
+//Exercise 10 — Concatenating with `+`
+//Create:
+//string firstName
+//string lastName
+//Print the full name by concatenating strings with `+`.
+//Desired Result
+//Tim Corey
+//Note that you must add a space between the names using a String Literal:
+//" "
+
+// string firstName = string.Empty;
+// string lastName =  string.Empty;
+//
+// firstName = "Tim";
+// lastName = "Corey";
+//
+// Console.WriteLine(firstName + " " + lastName);
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Exercise 11 — Constructing a Statement with Chaining
+
+//Create the variables:
+//`firstName`
+//`favoriteColor`
+//Print using `+` only:
+//Tim's favorite color is Blue.
+//The values ​​`Tim` and `Blue` should come from the variables.
+
+// string firstName = string.Empty;
+// string favoriteColor =  string.Empty;
+//
+// firstName = "Tim's";
+// favoriteColor = "favorite color is Blue.";
+//
+// Console.WriteLine(firstName + " " + favoriteColor);
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Exercise 12 — String Interpolation
+
+//Rewrite Exercise 11, but this time use String Interpolation:
+//$"..."
+//You must not use `+` in this exercise.
+
+// string firstName = string.Empty; 
+// string favoriteColor =  string.Empty;
+
+// firstName = "Tim";
+// favoriteColor = "Blue";
+
+// Console.WriteLine($"{firstName}'s favorite color is {favoriteColor}.");
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Exercise 13 — Three Variables in a Sentence
+
+//Create the variables:
+//`firstName`
+//`city`
+//`favoriteFood`
+//Print using String Interpolation:
+//Anna lives in Tel Aviv and likes Pizza.
+//All variable information must come from the variables and not be written directly into the sentence.
+    
+// string firstName =  string.Empty;
+// string city =   string.Empty;
+// string favoriteFood = string.Empty;
+//
+// firstName = "Anna";
+// city = "Tel Aviv";
+// favoriteFood = "Pizza";
+//
+// Console.WriteLine($"{firstName} lives in {city} and likes {favoriteFood}.");
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Exercise 14 — Storing the Sentence in a Variable
+//Create:
+//`firstName`
+//`lastName`
+//`fullName`
+//The value of `fullName` should be created using String Interpolation and the first two variables.
+//Then print only `fullName`.
+
+// string firstName = string.Empty;
+// string lastName =  string.Empty;
+// string fullName = string.Empty;
+//
+// firstName = "Anna";
+// lastName = "Rubenchik";
+// fullName = firstName + " " + lastName;
+// Console.WriteLine(fullName);
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Part 4 — Newlines and Escape Characters
+
+//Exercise 15 — Line feed with `\n`
+//Create the variables:
+//`firstName`
+//`lastName`
+//`favoriteColor`
+//Use only one `Console.WriteLine` and display:
+//First name: Anna
+//Last name: Rubenchik
+//Favorite color: Blue
+//Use `\n` to feed a line.
+
+// string firstName = string.Empty;
+// string lastName =  string.Empty;
+// string favoriteColor =  string.Empty;
+//
+// firstName = "Anna";
+// lastName =  "Rubenchik";
+// favoriteColor = "Blue";
+//
+// Console.WriteLine($"First name: {firstName} \n" +
+//                   $"Last name: {lastName} \n" +
+//                   $"Favorite color: {favoriteColor} \n");
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Exercise 16 — Fixing a file path using `\\`
+//The following code causes errors because of the `\`:
+//string filePath = "C:\Users\Anna\Documents";
+//Fix it using **Escape Characters Only**.
+//In this exercise, `@` is not allowed.
+//Print the path.
+//Desired Output
+//C:\Users\Anna\Documents
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
