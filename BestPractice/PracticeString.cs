@@ -416,10 +416,8 @@
 // email = @"john.smith@gmail.com";
 
 // Console.WriteLine($"Name: {name} \nCity: {city} \nFavorite Color: {favoriteColor} \nFavorite Food: {favoriteFood} \nEmail: {email}");
-
-
-
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 //Exercise 1
 //Part A — Defining, Assigning and Using a Variable
 //Exercise 1 — The First Variable
@@ -593,12 +591,12 @@
 //The values ​​`Tim` and `Blue` should come from the variables.
 
 // string firstName = string.Empty;
-// string favoriteColor =  string.Empty;
-//
-// firstName = "Tim's";
-// favoriteColor = "favorite color is Blue.";
-//
-// Console.WriteLine(firstName + " " + favoriteColor);
+// string favoriteColor = string.Empty;
+
+// firstName = "Tim";
+// favoriteColor = "Blue";
+
+// Console.WriteLine(firstName + "'s favorite color is " + favoriteColor + ".");
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 //Exercise 12 — String Interpolation
@@ -629,11 +627,11 @@
 // string firstName =  string.Empty;
 // string city =   string.Empty;
 // string favoriteFood = string.Empty;
-//
+
 // firstName = "Anna";
 // city = "Tel Aviv";
 // favoriteFood = "Pizza";
-//
+
 // Console.WriteLine($"{firstName} lives in {city} and likes {favoriteFood}.");
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -646,12 +644,14 @@
 //Then print only `fullName`.
 
 // string firstName = string.Empty;
-// string lastName =  string.Empty;
+// string lastName = string.Empty;
 // string fullName = string.Empty;
-//
+
 // firstName = "Anna";
 // lastName = "Rubenchik";
-// fullName = firstName + " " + lastName;
+
+// fullName = $"{firstName} {lastName}";
+
 // Console.WriteLine(fullName);
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -690,6 +690,178 @@
 //Desired Output
 //C:\Users\Anna\Documents
 
-
+// string filePath = "C:\\Users\\Anna\\Documents";
+// Console.WriteLine(filePath);
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+//Exercise 17 — Fixing a Path Using `@`
+//Rewrite Exercise 16, but this time use a Verbatim String:
+//@"..."
+//In this exercise, you must not use `\\`.
+
+// string filePath = @"C:\Users\Anna\Documents";
+// Console.WriteLine(filePath);
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Exercise 18 — A path containing a variable
+//Create:
+//string firstName="Anna";
+//Then create a variable called `message` to hold the statement:
+//The file for Anna is at C:\Users\Anna\Documents
+//Use a combination of:
+//$@"..."
+//The name `Anna` must come from the variable in both places in the statement.
+
+// string firstName="Anna";
+// string message = $@"The file for {firstName} is at C:\Users\{firstName}\Documents";
+// Console.WriteLine(message);
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Part 5 — Finding and Fixing Errors
+//Exercise 19 — Fix the Code
+//The following code has some style and path errors:
+//string strName = "";
+//string FColor = "";
+//string p = "";
+//strName = "John";
+//FColor = "Blue";
+//p = "C:\Temp\John";
+//Console.WriteLine("Hello " + strName);
+//Console.WriteLine("Your favorite color is " + FColor);
+//Console.WriteLine(p);
+//Fix the code according to the rules you learned:
+//Clear variable names.
+//`camelCase`.
+//No Hungarian Notation.
+//No single letter names.
+//Initialization using `string.Empty`.
+//Valid path.
+//Use String Interpolation in printing.
+//Do not change the content of the output.
+
+// string name = string.Empty;
+// string favoriteColor = string.Empty;
+// string filePath = string.Empty;
+
+// name = "John";
+// favoriteColor = "Blue";
+// filePath = @"C:\Temp\John";
+// Console.WriteLine($"Hello {name}");
+// Console.WriteLine($"Your favorite color is {favoriteColor}");
+// Console.WriteLine(filePath);
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Exercise 20 — What will be printed?
+
+//Without running it first, write as a comment what you think will be printed:
+// string firstName = string.Empty;
+// firstName = "Tim";
+// firstName = "John";
+// firstName = "Sarah";
+// Console.WriteLine(firstName);
+//Then run it and check the answer.
+
+//What will be printed is the name Sarah.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Exercise 21 — Find the Problem
+
+//The following code does not display the value of the variable:
+//string firstName = "Tim";
+//Console.WriteLine("Hello {firstName}");
+//Fix it using String Interpolation.
+
+// string firstName = "Tim";
+// Console.WriteLine($"Hello {firstName}");
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Exercise 22 — Valid, but Poor Code
+// The following code compiles:
+//string a = "Anna";
+// string b = "Blue";
+// string c = "Pizza";
+// Console.WriteLine($"{a} likes {b} and {c}");
+// Rewrite it so that another developer can immediately understand what each variable represents.
+//> There is no need to change the statement or add functionality.
+//Just improve the variable names.>
+
+// string firstName = "Anna";
+//  string favoriteColor = "Blue";
+//  string favoriteFood = "Pizza";
+//  Console.WriteLine($"{firstName} likes {favoriteColor} and {favoriteFood}");
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Part 6 — Final Challenge 🏆
+//Exercise 23 — User Card
+//Create the following variables:
+//firstName
+//lastName
+//favoriteColor
+//favoriteFood
+//city
+//filePath
+//Requirements:
+// - All variables will be of type `string`.
+// - All will be initialized first with `string.Empty`.
+// - Then values ​​will be applied to them.
+// - `filePath` will contain a valid Windows path.
+// - Use String Interpolation.
+// - Use `\n` to print everything in one `Console.WriteLine`.
+// - Do not use `+`.
+// - Variable names will be in `camelCase`.
+// - The path must appear as is, with a single `\` in the output.
+//Sample Output
+//User: Anna Rubenchik
+//Favorite color: Blue
+//Favorite food: Pizza
+//City: Tel Aviv
+//File location: C:\Users\Anna\Documents
+
+// string firstName = string.Empty;
+// string lastName = string.Empty;
+// string favoriteColor = string.Empty;
+// string favoriteFood = string.Empty;
+// string city = string.Empty;
+// string filePath = string.Empty;
+
+// firstName = "Anna";
+// lastName = "Rubenchik";
+// favoriteColor = "Blue";
+// favoriteFood = "Pizza";
+// city = "Tel Aviv";
+// filePath = @"C:\Users\Anna\Documents";
+
+// Console.WriteLine($"User: {firstName} {lastName}\nFavorite color: {favoriteColor}\nFavorite food: {favoriteFood}\nCity: {city}\nFile location: {filePath}");
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Bonus Exercise — Building a Complex Sentence
+// Create the variables:
+//studentName
+//courseName
+//lessonName
+//projectPath
+//Display:
+//Anna is studying C# Master Course.
+//The current lesson is Common Variables: string.
+//The project is stored at C:\CSharpMasterCourse\VariablesPractice.
+//You must use:
+// - String Interpolation.
+// - Verbatim string.
+// - Clear variables.
+// - `camelCase`.
+// - Only one `Console.WriteLine`.
+
+// string studentName = string.Empty;
+// string courseName = string.Empty;
+// string lessonName = string.Empty;
+// string projectPath = string.Empty;
+
+// studentName = "Anna";
+// courseName = "C# Master Course";
+// lessonName = "Common Variables: string";
+// projectPath = @"C:\CSharpMasterCourse\VariablesPractice";
+
+// Console.WriteLine($@"{studentName} is studying {courseName}. 
+// The current lesson is {lessonName}. 
+// The project is stored at {projectPath}.");
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
