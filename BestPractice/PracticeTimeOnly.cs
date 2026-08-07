@@ -297,6 +297,198 @@
 //2. Give it a value of `8:00 AM` using `TimeOnly.Parse`.
 // 3. Print it.
 
-TimeOnly openAt = TimeOnly.Parse("8:00 AM");
-Console.WriteLine(openAt);
+// TimeOnly openAt = TimeOnly.Parse("8:00 AM");
+// string eightAm = openAt.ToString("h:mm tt");
+// Console.WriteLine(eightAm);
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Exercise 2 — Creating a closing time
+//1. Create a variable `closeAt` with the time `7:00 PM`.
+//2. Print:
+//Closing time: ...
+
+// TimeOnly closeAt = TimeOnly.Parse("7:00 PM");
+// string sevenPm = closeAt.ToString("h:mm tt");
+// Console.WriteLine($"Closing time: {sevenPm}");
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Part 2 — “Just the Time” from `DateTime`
+//Exercise 3 — The Current Time
+//1. Create a variable named `rightNow` of type `TimeOnly` using `TimeOnly.FromDateTime(DateTime.Now)`.
+//2. Print:
+//`DateTime.Now`
+//`rightNow`
+//Goal: To see that `DateTime` contains both a date and a time, and `TimeOnly` contains only a time.
+
+// TimeOnly rightNow = TimeOnly.FromDateTime(DateTime.Now);
+// DateTime dateAndTime = DateTime.Now;
+//
+// Console.WriteLine(rightNow);
+// Console.WriteLine(dateAndTime);
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Part 3 — Formatting
+//Exercise 5 — 24-hour format
+//1. Create a time named `meetingAt` using `TimeOnly.Parse` (choose your own time, e.g. PM ​​with minutes).
+//2. Print it in 24-hour format (HH:mm).
+
+// TimeOnly meetingAt = TimeOnly.Parse("12:00");
+// string withMinutes = meetingAt.ToString("HH:mm");
+// Console.WriteLine(withMinutes);
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Exercise 6 — 12-hour format
+//Print the same time in the format:
+//06:05 PM
+
+// TimeOnly meetingAt = TimeOnly.Parse("06:05 PM");
+// string withMinutes = meetingAt.ToString("hh:mm tt");
+// Console.WriteLine(withMinutes);
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Part 4 — Time Comparisons
+//Exercise 7 — Are We Open Yet?
+//Conditionals Using `openAt` and `rightNow`:
+
+//If `rightNow` Before `openAt` → `We are not open yet.`
+//Else → `We are open or already past opening time.`
+
+// TimeOnly openAt = TimeOnly.Parse("8:00 AM");
+//
+// TimeOnly rightNow = TimeOnly.Parse(DateTime.Now.ToString("HH:mm"));
+//
+// if (rightNow < openAt)
+// {
+//     Console.WriteLine("We are not open yet.");
+// }
+// else
+// {
+//     Console.WriteLine("We are open or already past opening time.");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Exercise 8 — Is the business open (hour range)
+//Define opening and closing hours (openAt/closeAt) and get the current time (rightNow).
+//Check if `rightNow` is within the range of operating hours, and print:
+//`The business is open.`
+//`The business is closed.
+
+// TimeOnly openAt = TimeOnly.Parse("08:00");
+// TimeOnly closeAt = TimeOnly.Parse("23:00");
+//
+// TimeOnly rightNow = TimeOnly.Parse(DateTime.Now.ToString("HH:mm"));
+//
+// if (rightNow > openAt && rightNow < closeAt )
+// {
+//     Console.WriteLine("The business is open.");
+// }
+// else
+// {
+//     Console.WriteLine("The business is closed.");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Part 5 — “Local Business” Practice + Exceptions
+//Exercise 9 — Exception: Early Close
+//Script:
+//Normally: Open 8:00, Close 19:00
+//Today there is an exception: Early Close at 16:00
+//Write code that defines:
+//`regularCloseAt` (19:00)
+//`earlyCloseAt` (16:00)
+//`rightNow`
+//Then select “Actual Close”:
+//If today is an exception → use `earlyCloseAt`
+//Otherwise → use `regularCloseAt`
+
+// TimeOnly regularCloseAt = TimeOnly.Parse("19:00");
+// TimeOnly earlyCloseAt = TimeOnly.Parse("16:00");
+// TimeOnly open = TimeOnly.Parse("8:00");
+// TimeOnly rightNow = TimeOnly.Parse(DateTime.Now.ToString("HH:mm"));
+// TimeOnly actualCloseAt = TimeOnly.Parse("15:00");
+//
+// if (rightNow > open && rightNow <  actualCloseAt)
+// {
+//     Console.WriteLine(earlyCloseAt);
+// }
+// else
+// {
+//     Console.WriteLine(regularCloseAt);
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//You are building a small program that simulates a business's opening hours system.
+//It has three times that are important to you:
+//Current time
+//Business opening time
+//Business closing time
+//Then the program needs to figure out what the business's status is based on the current time.
+
+
+//1. Right now: HH:mm
+//The program needs to display the current time.
+//For example only:
+//Right now: 14:25
+//HH:mm means the time should be displayed in 24-hour format.
+
+TimeOnly currentTime = TimeOnly.Parse(DateTime.Now.ToString("HH:mm"));
+Console.WriteLine($"Right now: {currentTime}");
+
+//2. Open at: HH:mm
+//You need to decide on the business's opening time and save it.
+//For example, if the business opens in the morning, the program will display the opening time in the requested format:
+//Open at: ...
+
+TimeOnly openingTime = TimeOnly.Parse("HH:mm");
+Console.WriteLine($"Open at: {openingTime}");
+
+// 3. Close at: HH:mm
+//The same goes for the closing time.
+//The program needs to know when the business closed and display:
+//Close at: ...
+
+TimeOnly closingTime  = TimeOnly.Parse("HH:mm");
+Console.WriteLine($"Close at: {closingTime}");
+
+//4.Business status: OPEN or CLOSED
+//Now comes the part where the program needs to make a decision.
+//It needs to look at:
+//The time now
+//Opening time
+//Closing time
+//And decide:
+//OPEN
+//or:
+//CLOSED
+//That is, the question you need to answer in the program is:
+//Should the business be open at the current time?
+//5. If the business is closed — explain why
+//This is the part that makes the challenge a "smart system."
+
+//It is not enough to write:
+//CLOSED
+//If the business is closed, the program also needs to understand why it is closed.
+
+//There are only two possible reasons in the exercise:
+//The business has not yet opened
+//That is, the current time is too early.
+
+// Then it should appear:
+//Before opening
+//The business has already closed
+//That is, the operating hours have already ended.
+//Then it should appear:
+//After closing
+//So there are actually three possible situations
+//From a conceptual point of view only:
+//Situation A: Still too early → The business is closed because it has not yet opened.
+//Situation B: We are within operating hours → The business is open.
+//Situation C: It's too late → The business is closed because it has already closed.
+
+if (currentTime )
+{
+    
+}
+
+
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
