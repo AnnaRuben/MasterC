@@ -27,12 +27,6 @@
 //double testDouble = age;
 //decimal testDecimal = (decimal)testDouble;
 
-
-
-
-
-
-
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Examples and Explanation
 //the difference between:
