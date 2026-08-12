@@ -8,7 +8,7 @@
 //    {
 //    }
 //}
-
+////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 //bool isComplete = true;
 
@@ -24,10 +24,6 @@
 //}
 
 ////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-
 
 //Console.Write("What is your first name: ");
 //string? firstName = Console.ReadLine();
@@ -47,11 +43,6 @@
 
 //Console.WriteLine(lastName);
 //Console.WriteLine("End of program.");
-
-
-
-
-
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Examples and Explanations :
