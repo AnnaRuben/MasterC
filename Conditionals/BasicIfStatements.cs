@@ -25,24 +25,24 @@
 
 ////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-//Console.Write("What is your first name: ");
-//string? firstName = Console.ReadLine();
-
-//string lastName;
-
-//if (firstName.ToLower() == "tim")
-//{
-//    Console.WriteLine("Hello Mr. Corey.");
-//    lastName = "Corey";
-//}
-//else
-//{
-//    Console.WriteLine($"Helo {firstName}");
-//    lastName = "Smith";
-//}
-
-//Console.WriteLine(lastName);
-//Console.WriteLine("End of program.");
+// Console.Write("What is your first name: ");
+// string? firstName = Console.ReadLine();
+//
+// string lastName;
+//
+// if (firstName.ToLower() == "tim")
+// {
+//     Console.WriteLine("Hello Mr. Corey.");
+//     lastName = "Corey";
+// }
+// else
+// {
+//     Console.WriteLine($"Helo {firstName}");
+//     lastName = "Smith";
+// }
+//
+// Console.WriteLine(lastName);
+// Console.WriteLine("End of program.");
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Examples and Explanations :
