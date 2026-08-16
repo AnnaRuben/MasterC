@@ -268,10 +268,10 @@
 //Welcome guest.
 
 
-// Console.Write("Hello User! Please enter your name");
+// Console.Write("Hello User! Please enter your name: ");
 // string name = Console.ReadLine();
 //
-// if (name.Trim() == "anna")
+// if (name.ToLower() == "anna")
 // {
 //     Console.WriteLine("Welcome Anna.");
 // }
@@ -394,93 +394,106 @@
 // {
 //     Console.WriteLine("Guest");
 // }
-//
-// Console.Write("Hello User! Please enter your role: ");
-// string role = Console.ReadLine();
-// Console.WriteLine(role);
+
+// Console.Write("Role: ");
+// string? userRole = Console.ReadLine();
+// Console.WriteLine(userRole);
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Exercise 17 — Environment
-
 //Ask the user to enter:
-
 //qa
-
 //Or another value.
 
 //Create a variable named:
-
 //environmentName
 
 //If the user entered qa, the value should be:
-
 //QA Environment
 
 //Otherwise:
-
 //Production Environment
 
 //Only display the variable after the if/else statement has finished.
 
 
-
+// Console.Write("Hello User! Please enter the word: qa ,or another value of your choice: ");
+// string? userInput = Console.ReadLine();
+//
+// if (userInput.ToLower() == "qa")
+// {
+//     Console.WriteLine("QA Environment");
+// }
+// else
+// {
+//     Console.WriteLine("Production Environment");
+// }
+//
+// string  variableName = string.Empty;  
+// variableName = "environmentName";
+// Console.WriteLine(variableName);
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Part 6 — Nested if
-
-//Here I intentionally don't tell you where to put any conditions. 😉
-
 //Exercise 18 — Special User
-
 //Ask the user to enter a first name.
 
 //If the name is:
-
 //anna
-
 //Display:
-
 //Hello Anna.
 
 //When it comes to Anna, you also need to check a variable:
-
 //isAdmin
 
 //If the variable corresponds to the administrator status, additionally display:
-
 //Administrator access.
 
 //If the name is not Anna:
-
 //Hello guest.
 
 
-
+// Console.Write("Hello User! Please enter your first name: ");
+// string? firstName = Console.ReadLine();
+//
+// if (firstName.ToLower() == "anna")
+// {
+//     bool isAdmine = true;
+//     Console.Write("Hello Anna.");
+//     Console.WriteLine("Administrator access.");
+// }
+// else
+// {
+//     Console.Write("Hello guest.");
+// }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Exercise 19 — Logged In User
-
 //Create:
-
 //isLoggedIn
-
 //And ask the user to enter their name.
 
 //When the user is logged in:
-
 //User is logged in.
-
 //And in that state, check whether their name is:
-
 //anna
-
 //If so:
-
 //Welcome Anna.
 
 //If the user is not logged in:
-
 //User is not logged in.
 
 
-
+// Console.Write("Hello User! Please enter your name: ");
+// string? firstName = Console.ReadLine();
+//
+// if (firstName.ToLower() == "anna")
+// {
+//     bool isLoggedIn = true;
+//     Console.Write("User is logged in.");
+//     Console.Write("Welcome Anna.");
+// }
+// else
+// {
+//     Console.Write("User is not logged in.");
+// }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Exercise 20 — QA System
 //Create a variable:
@@ -505,7 +518,7 @@
 //
 // bool isSystemOnline = false;
 //
-// if (isSystemOnline && username.ToLower() == "tester")
+// if (username.ToLower() == "tester")
 // {
 //     Console.WriteLine("System online.");
 //     Console.WriteLine("QA user detected.");
@@ -515,113 +528,181 @@
 //     Console.Write("System offline.");
 // }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//Part 7 — Code Muscle 🧠💪
-
-//These exercises are intentionally less detailed.
-
+//Part 7 — Code Muscle
 //Exercise 21 — Coffee Shop
+//Create a program with:
+//bool that represents whether the coffee shop is open.
+
+//One message when it is open.
+
+//Another message when it is closed.
+
+//Another message that will always appear at the end of the program.
+
+
+// bool isCoffeeShopOpen = true;
 //
-// Create a program with:
+// if (isCoffeeShopOpen)
+// {
+//     Console.WriteLine("Coffee Shop is open");
+// }
+// else
+// {
+//     Console.WriteLine("Coffee Shop is closed");
+// }
 //
-// bool that represents whether the coffee shop is open.
+// string openingHours = string.Empty;
+// openingHours = "Welcome to \"Anna\" Cafe\nOpening hours:\nSunday - Thursday between the hours: 10:00 - 22:00\nFriday - Saturday between the hours: 10:00 - 23:59\nHoliday evenings, Chol Hamoed, holidays between the hours: 11:00 - 23:00";
+// Console.WriteLine(openingHours);
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 22 — Known User
+//Prompt the user for a name.
+
+//If the name is tim, case-insensitive:
+//Hello Mr. Corey.
+
+//otherwise display a greeting with the name the user actually entered.
+
+
+// Console.Write("Hello User! Please enter your name: ");
+// string? userName = Console.ReadLine();
 //
-// One message when it is open.
+// if (userName == "tim")
+// {
+//     Console.WriteLine("Hello Mr. Corey.");
+// }
+// else
+// {
+//     Console.Write("Actual First Name: ");
+//     string? actualFirstName = Console.ReadLine();
+//     Console.Write(actualFirstName);
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 23 — Employee Department
+//Prompt the user for a name.
+
+//Create a variable:
+//department
+
+//If the name is:
+//anna
+
+//The department will be:
+//QA
+
+//Otherwise:
+//General
+
+//At the end of the condition, display the name of the department.
+
+
+// Console.Write("Hello User! Please enter your first name: ");
+// string? firstName = Console.ReadLine();
 //
-// Another message when it is closed.
+// if (firstName.ToLower( ) == "anna")
+// {
+//     string? department = string.Empty;
+//     department = "QA";
+//     Console.WriteLine(department);
+// }
+// else
+// {
+//     string? department = string.Empty;
+//     department = "General";
+//     Console.WriteLine(department);
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 24 — Access Check
+//Create:
+//hasAccess
+
+//If there is access, ask for a username.
+
+//If the username is:
+//admin
+
+//Display:
+//Administrator.
+
+//If there is access ,but it is a different name:
+//Standard user.
+
+//If there is no access:
+//Access denied.
+
+
+// bool hasAccess = true;
+// bool isAdmin = true;
 //
-// Another message that will always appear at the end of the program.
-//
-// Exercise 22 — Known User
-//
-// Prompt the user for a name.
-//
-// If the name is tim, case-insensitive:
-//
-// Hello Mr. Corey.
-//
-// Otherwise display a greeting with the name the user actually entered.
-//
-// Exercise 23 — Employee Department
-//
-// Prompt the user for a name.
-//
-// Create a variable:
-//
-// department
-//
-// If the name is:
-//
-// anna
-//
-// The department will be:
-//
-// QA
-//
-// Otherwise:
-//
-// General
-//
-// At the end of the condition, display the name of the department.
-//
-// Exercise 24 — Access Check
-//
-// Create:
-//
-// hasAccess
-//
-// If there is access, ask for a username.
-//
-// If the username is:
-//
-// admin
-//
-// Display:
-//
-// Administrator.
-//
-// If there is access but it is a different name:
-//
-// Standard user.
-//
-// If there is no access:
-//
-// Access denied.
-// 🔥 Final Challenge — Basic If Statements Center
-//
-// Write a single program that combines all the material from the file.
-//
-// The program should:
-//
-// Prompt the user for their first name.
-// Contain a bool variable named:
-//
-// isSystemOnline
-//
-// When the system is offline, display:
-//
-// System is offline.
-//
-// When the system is online, display:
-//
-// System is online.
-//
-// When the system is online, also check the username.
-// If the name is:
-// anna
-//
-// Regardless of case, display:
-//
+// if (hasAccess && isAdmin)
+// {
+//     Console.Write("Hello User! Please enter your user name: ");
+//     string? userName = Console.ReadLine();
+//     Console.WriteLine("Administrator.");
+// }
+// else
+// {
+//     Console.WriteLine("Standard user.");
+//     Console.WriteLine("Standard user.");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Final Challenge — Basic If Statements Center
+//Write a single program that combines all the material from the file.
+
+//The program should:
+//Prompt the user for their first name.
+
+//Contain a bool variable named:
+//isSystemOnline
+
+//When the system is offline, display:
+//System is offline.
+
+//When the system is online, display:
+//System is online.
+
+//When the system is online, also check the username.
+//If the name is:
+//anna
+//Regardless of case, display:
 // Welcome Anna.
+
 // For another name:
 // Welcome [name].
+
 // Create a variable named:
 // userType
+
 // For Anna its value will be:
 // QA Tester
+
 // For another user:
 // Standard User
+
 // After all conditions are met, display:
 // User type: [userType]
 // And the last line always:
 // End of program.
-// The
+
+
+// Console.Write("Hello User! Please enter your first name: ");
+// string? firstName = Console.ReadLine();
+//
+// string? anotherName = string.Empty;
+// anotherName = Console.ReadLine();
+//
+// if (firstName == "anna")
+// {
+//     bool isSystemOnline = true;
+//     Console.WriteLine("System is online.");
+//     string? userType = "QA Tester";
+//     Console.WriteLine("Welcome Anna.");
+//     Console.WriteLine(userType);
+//     Console.WriteLine("End of program.");
+// }
+// else
+// {
+//     string? userType = "Standard User";
+//     Console.WriteLine($"Welcome {anotherName}!");
+//     Console.WriteLine("End of program.");
+// }
