@@ -347,22 +347,20 @@
 
 
 // Console.Write("Hello User! Please enter your first name: ");
-// string? firsrName = Console.ReadLine();
+// string? firstName = Console.ReadLine();
 //
-// if (firsrName.ToLower() == "tim")
+// string lastName;
+//
+// if (firstName.ToLower() == "tim")
 // {
-//     string lastName = "Corey";
-//     Console.WriteLine(lastName);
+//     lastName = "Corey";
 // }
 // else
 // {
-//     string lastName = "Smith";
-//     Console.WriteLine(lastName);
+//     lastName = "Smith";
 // }
 //
-// Console.Write("Please enter your real last name: ");
-// string actualLastName = Console.ReadLine();
-// Console.WriteLine(actualLastName);
+// Console.WriteLine(lastName);
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Exercise 16 — User Role
 //Ask the user to enter a username.
@@ -385,19 +383,18 @@
 // Console.Write("Hello User! Please enter a user name: ");
 // string? userName = Console.ReadLine();
 //
+// string userRole;
+//
 // if (userName.ToLower() == "anna")
 // {
-//     string userRole = "Tester";
-//     Console.WriteLine(userRole);
+//     userRole = "Tester";
 // }
 // else
 // {
-//     Console.WriteLine("Guest");
+//     userRole = "Guest";
 // }
-
-// Console.Write("Role: ");
-// string? userRole = Console.ReadLine();
-// Console.WriteLine(userRole);
+//
+// Console.WriteLine($"Role: {userRole}");
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Exercise 17 — Environment
 //Ask the user to enter:
@@ -419,18 +416,18 @@
 // Console.Write("Hello User! Please enter the word: qa ,or another value of your choice: ");
 // string? userInput = Console.ReadLine();
 //
+// string environmentName;
+//
 // if (userInput.ToLower() == "qa")
 // {
-//     Console.WriteLine("QA Environment");
+//     environmentName = "QA Environment";
 // }
 // else
 // {
-//     Console.WriteLine("Production Environment");
+//     environmentName = "Production Environment";
 // }
 //
-// string  variableName = string.Empty;  
-// variableName = "environmentName";
-// Console.WriteLine(variableName);
+// Console.WriteLine(environmentName);
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Part 6 — Nested if
 //Exercise 18 — Special User
@@ -451,20 +448,25 @@
 //Hello guest.
 
 
+// bool isAdmin = true;
+//
 // Console.Write("Hello User! Please enter your first name: ");
 // string? firstName = Console.ReadLine();
 //
 // if (firstName.ToLower() == "anna")
 // {
-//     bool isAdmine = true;
-//     Console.Write("Hello Anna.");
-//     Console.WriteLine("Administrator access.");
+//     Console.WriteLine("Hello Anna.");
+//
+//     if (isAdmin)
+//     {
+//         Console.WriteLine("Administrator access.");
+//     }
 // }
 // else
 // {
-//     Console.Write("Hello guest.");
+//     Console.WriteLine("Hello guest.");
 // }
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Exercise 19 — Logged In User
 //Create:
 //isLoggedIn
@@ -481,19 +483,24 @@
 //User is not logged in.
 
 
-// Console.Write("Hello User! Please enter your name: ");
-// string? firstName = Console.ReadLine();
-//
-// if (firstName.ToLower() == "anna")
-// {
-//     bool isLoggedIn = true;
-//     Console.Write("User is logged in.");
-//     Console.Write("Welcome Anna.");
-// }
-// else
-// {
-//     Console.Write("User is not logged in.");
-// }
+ // bool isLoggedIn = true;
+ //
+ // Console.Write("Hello User! Please enter your name: ");
+ // string? firstName = Console.ReadLine();
+ //
+ // if (isLoggedIn)
+ // {
+ //     Console.WriteLine("User is logged in.");
+ //
+ //     if (firstName.ToLower() == "anna")
+ //     {
+ //         Console.WriteLine("Welcome Anna.");
+ //     }
+ // }
+ // else
+ // {
+ //     Console.WriteLine("User is not logged in.");
+ // }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Exercise 20 — QA System
 //Create a variable:
@@ -513,20 +520,24 @@
 //System offline.
 
 
-// Console.Write("Hello User! Please enter your username: ");
-// string? username = Console.ReadLine();
-//
-// bool isSystemOnline = false;
-//
-// if (username.ToLower() == "tester")
-// {
-//     Console.WriteLine("System online.");
-//     Console.WriteLine("QA user detected.");
-// }
-// else
-// {
-//     Console.Write("System offline.");
-// }
+ // Console.Write("Hello User! Please enter your username: ");
+ // string? username = Console.ReadLine();
+ //
+ // bool isSystemOnline = false;
+ //
+ // if (isSystemOnline)
+ // {
+ //     Console.WriteLine("System online.");
+ //
+ //     if (username.ToLower() == "tester")
+ //     {
+ //         Console.WriteLine("QA user detected.");
+ //     }
+ // }
+ // else
+ // {
+ //     Console.WriteLine("System offline.");
+ // }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Part 7 — Code Muscle
 //Exercise 21 — Coffee Shop
@@ -567,15 +578,13 @@
 // Console.Write("Hello User! Please enter your name: ");
 // string? userName = Console.ReadLine();
 //
-// if (userName == "tim")
+// if (userName.ToLower() == "tim")
 // {
 //     Console.WriteLine("Hello Mr. Corey.");
 // }
 // else
 // {
-//     Console.Write("Actual First Name: ");
-//     string? actualFirstName = Console.ReadLine();
-//     Console.Write(actualFirstName);
+//     Console.Write($"Hello {userName}!");
 // }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Exercise 23 — Employee Department
@@ -599,18 +608,18 @@
 // Console.Write("Hello User! Please enter your first name: ");
 // string? firstName = Console.ReadLine();
 //
+// string department;
+//
 // if (firstName.ToLower( ) == "anna")
 // {
-//     string? department = string.Empty;
 //     department = "QA";
-//     Console.WriteLine(department);
 // }
 // else
 // {
-//     string? department = string.Empty;
 //     department = "General";
-//     Console.WriteLine(department);
 // }
+//
+// Console.WriteLine(department);
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Exercise 24 — Access Check
 //Create:
@@ -620,7 +629,6 @@
 
 //If the username is:
 //admin
-
 //Display:
 //Administrator.
 
@@ -631,20 +639,26 @@
 //Access denied.
 
 
-// bool hasAccess = true;
-// bool isAdmin = true;
-//
-// if (hasAccess && isAdmin)
-// {
-//     Console.Write("Hello User! Please enter your user name: ");
-//     string? userName = Console.ReadLine();
-//     Console.WriteLine("Administrator.");
-// }
-// else
-// {
-//     Console.WriteLine("Standard user.");
-//     Console.WriteLine("Standard user.");
-// }
+ // bool hasAccess = true;
+ //
+ // if (hasAccess)
+ // {
+ //     Console.Write("Hello User! Please enter your user name: ");
+ //     string? userName = Console.ReadLine();
+ //
+ //     if (userName.ToLower() == "admin")
+ //     {
+ //         Console.WriteLine("Administrator.");
+ //     }
+ //     else
+ //     {
+ //         Console.WriteLine("Standard user.");
+ //     }
+ // }
+ // else
+ // {
+ //     Console.WriteLine("Access denied.");
+ // }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Final Challenge — Basic If Statements Center
 //Write a single program that combines all the material from the file.
@@ -685,24 +699,33 @@
 // End of program.
 
 
-// Console.Write("Hello User! Please enter your first name: ");
-// string? firstName = Console.ReadLine();
-//
-// string? anotherName = string.Empty;
-// anotherName = Console.ReadLine();
-//
-// if (firstName == "anna")
-// {
-//     bool isSystemOnline = true;
-//     Console.WriteLine("System is online.");
-//     string? userType = "QA Tester";
-//     Console.WriteLine("Welcome Anna.");
-//     Console.WriteLine(userType);
-//     Console.WriteLine("End of program.");
-// }
-// else
-// {
-//     string? userType = "Standard User";
-//     Console.WriteLine($"Welcome {anotherName}!");
-//     Console.WriteLine("End of program.");
-// }
+ // Console.Write("Hello User! Please enter your first name: ");
+ // string? firstName = Console.ReadLine();
+ //
+ // bool isSystemOnline = true;
+ //
+ // string userType;
+ //
+ // if (isSystemOnline)
+ // {
+ //     Console.WriteLine("System is online.");
+ //
+ //     if (firstName.ToLower() == "anna")
+ //     {
+ //         Console.WriteLine("Welcome Anna.");
+ //         userType = "QA Tester";
+ //     }
+ //     else
+ //     {
+ //         Console.WriteLine($"Welcome {firstName}.");
+ //         userType = "Standard User";
+ //     }
+ //
+ //     Console.WriteLine($"User type: {userType}");
+ // }
+ // else
+ // {
+ //     Console.WriteLine("System is offline.");
+ // }
+ //
+ // Console.WriteLine("End of program.");
