@@ -729,3 +729,484 @@
  // }
  //
  // Console.WriteLine("End of program.");
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//C# — Basic If Statements
+//Weak Points Practice
+
+//Exercise 1 — Answer Check
+//Ask the user to answer:
+//yes
+
+//The system should also accept the answer in forms like:
+//YES
+//Yes
+//yEs
+
+//If the answer is correct:
+//Accepted
+
+//Otherwise:
+//Rejected
+
+
+// Console.Write("Hello User! Please enter the word: yes ");
+// string? userAnswer = Console.ReadLine();
+//
+// if (userAnswer.ToLower() == "yes")
+// {
+//     Console.WriteLine("Accepted");
+// }
+// else
+// {
+//     Console.WriteLine("Rejected");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 2 — User Role
+//Ask the user:
+//Enter role:
+//The valid options are:
+//admin
+//user
+
+//It does not matter how the user wrote uppercase or lowercase letters.
+
+//For Admin:
+//Administrator access
+
+//For User:
+//User access
+
+//For any other value:
+//Unknown role
+
+
+// Console.Write("Hello User! Please Enter role: ");
+// string? userRole = Console.ReadLine();
+//
+// bool isAdmin = true;
+//
+// if (isAdmin)
+// {
+//     Console.WriteLine("Administrator access");
+//
+//     if (userRole.ToLower() == "user")
+//     {
+//         Console.WriteLine("User access");
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Unknown role");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 3 — Membership
+//Ask:
+//Are you a member?
+
+//If the answer is `yes`, case-insensitive:
+//Member access
+
+//Otherwise:
+//Guest access
+
+
+// Console.Write("Hello User! Are you a member? ");
+// string? userAnswer = Console.ReadLine();
+//
+// if (userAnswer.ToLower() == "yes")
+// {
+//     Console.WriteLine("Member access");
+// }
+// else
+// {
+//     Console.WriteLine("Guest access");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Scope
+//Exercise 4 — Selected Department
+//Ask the user to select:
+//qa
+//development
+
+//For `qa`, the selected value for the department name would be:
+//Quality Assurance
+
+//Otherwise:
+//Development
+
+//After the decision is complete, display:
+//Department: ...
+
+
+// Console.Write("Hello User! Please select: qa or development: ");
+// string? userSelection = Console.ReadLine();
+
+// if (userSelection.ToLower() == "qa")
+// {
+//     Console.WriteLine("Quality Assurance");
+// }
+// else
+// {
+//     Console.WriteLine("Development");
+// }
+//
+// Console.Write($"Department: {userSelection}");
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 5 — Selected Status
+//Ask:
+//Is the task complete?
+
+//If the answer is `yes`, the status is:
+//Completed
+
+//Otherwise:
+//Not Completed
+
+//After the decision is complete, display:
+//Task status: ...
+
+
+// bool isComplete =  false;
+//
+// Console.Write("Hello User! Is the task complete? ");
+// string? taskStatus = Console.ReadLine();
+//
+// if (isComplete)
+// {
+//     if (taskStatus.ToLower() == "yes")
+//     {
+//         Console.WriteLine("Completed");
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Not Completed");
+// }
+//
+// Console.WriteLine($"Task status: {taskStatus}");
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 6 — Greeting
+//Ask the user to select:
+//morning
+//evening
+
+//For `morning`, the greeting is:
+//Good morning
+
+//Otherwise:
+//Good evening
+
+//After the decision is complete, display:
+//Selected greeting: ...
+
+
+// Console.Write("Hello User! Please select: morning or evening ");
+// string userSelection = Console.ReadLine();
+//
+// if (userSelection.ToLower() == "morning")
+// {
+//     Console.WriteLine("Good morning");
+// }
+// else
+// {
+//     Console.WriteLine("Good evening");
+// }
+//
+// Console.WriteLine($"Selected greeting: {userSelection}");
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Nested Decisions
+//Exercise 7 — Login
+//Ask:
+//Username:
+
+//If the username is:
+//admin
+//Ask:
+//Password:
+
+//If the password is:
+//1234
+//Show:
+//Login successful
+
+//Other:
+//Wrong password
+
+//If the username is not `admin`:
+//Unknown user
+
+
+// Console.Write("Hello User! Please enter your user name: ");
+// string? userName = Console.ReadLine();
+//
+// Console.Write("Please enter your password: ");
+// string? password =  Console.ReadLine();
+//
+// if (userName.ToLower() == "admin")
+// {
+//     if (password.ToLower() == "1234")   
+//     {
+//             Console.WriteLine("Login successful");
+//     }
+//     else
+//     {
+//         Console.WriteLine("Wrong password");
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Unknown user");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 8 — Department Access
+//Request:
+//Department:
+
+//If the user wrote:
+//qa
+//Ask:
+//Are you a manager?
+
+//If the answer is `yes`:
+//QA Manager access
+
+//Other:
+//QA Employee access
+
+//If the department is not `qa`:
+//Other department
+
+//The textual answers are not case-sensitive.
+
+
+// Console.Write("Hello User! What is your department? ");
+// string? department = Console.ReadLine();
+//
+// Console.Write("Are you a Manager? ");
+// string? userAnswer = Console.ReadLine();
+//
+// if (department.ToLower() == "qa")
+// {
+//     if (userAnswer.ToLower() == "yes")
+//     {
+//         Console.WriteLine("QA Manager access");
+//     }
+//     else
+//     {
+//         Console.WriteLine("QA Employee access");
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Other department");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 9 — Account
+//Request:
+//Account type:
+
+// If the user wrote:
+//premium
+//Ask:
+//Is the account active?
+
+//If the answer is `yes`:
+//Premium account active
+
+// Otherwise:
+//Premium account inactive
+
+//If the account type is not Premium:
+//Standard account
+
+//Case is not important.
+
+
+// Console.Write("Hello User! What is your account type? ");
+// string? accountType = Console.ReadLine();
+//
+// Console.Write("Is the account active? ");
+// string? accountActive = Console.ReadLine();
+//
+// if (accountType.ToLower() == "premium")
+// {
+//    Console.WriteLine("Premium account active");
+//   
+//     if (accountActive.ToLower() == "yes") 
+//     {
+//         Console.WriteLine("Your account is active");
+//     }
+//     else
+//     {
+//         Console.WriteLine("Premium account inactive");
+//     }
+// }
+// else
+// {
+//         Console.WriteLine("Standard account");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 10 — Employee System
+//Ask:
+//Employee type:
+
+//Options are:
+//manager
+//employee
+
+//If Manager, ask:
+//Security code:
+
+//If the code is:
+//5555
+//Show:
+//Manager access granted
+
+//Otherwise:
+//Invalid security code
+
+//If Employee:
+//Employee access granted
+
+//For any other type:
+//Unknown employee type
+
+
+// Console.Write("What is your employee type? ");
+// string? employeeType = Console.ReadLine();
+//
+// Console.Write("What is your security code? ");
+// string? securityCode = Console.ReadLine();
+//
+// if (employeeType.ToLower() == "manager")
+// {
+//    if (securityCode.ToLower() == "5555")
+//    {
+//        Console.Write("Manager access granted");
+//    }
+//    else
+//    {
+//         Console.Write("Invalid security code");
+//    }
+// }
+// else
+// {
+//     Console.Write("Unknown employee type");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Combined Practice 🔥
+//Exercise 11
+//Ask:
+//System:
+
+//Options are:
+//test
+//production
+
+
+//If the user selected `test`, ask:
+//Are you QA?
+
+//If the answer is `yes`, the final value will be:
+//QA Test Access
+
+//Otherwise:
+//Test Access
+
+// If the user chose something else, the final value will be:
+//Production Access
+
+//After all decisions are made, display:
+//Access: ...
+
+//Textual comparisons are case-insensitive.
+
+
+// Console.Write("What is your system? ");
+// string? system = Console.ReadLine();
+//
+// Console.Write("Are you QA? ");
+// string? role = Console.ReadLine();
+//
+// if (system.ToLower() == "test")
+// {
+//  Console.WriteLine("Test Access");
+//
+//  if (role.ToLower() == "yes")
+//  {
+//   Console.WriteLine("QA Test Access");
+//  }
+// }
+// else
+// {
+//  Console.WriteLine("Production Access");
+// }
+
+//Console.WriteLine($"Access: {system}");
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Final Challenge 
+//Request:
+//Enter user type:
+
+//The options are:
+//admin
+//employee
+
+//Case is not important.
+
+//If the user is `admin`, ask:
+//Enter access code:
+
+//If the code is:
+//ABC
+//The final value is:
+//Full Access
+
+//Otherwise:
+//Restricted Access
+
+//If the user is `employee`, the final value is:
+//Employee Access
+
+//If the user entered another user type:
+//Unknown Access `
+
+//After all the tests are complete, display:
+//Final access: ...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
