@@ -466,7 +466,7 @@
 // {
 //     Console.WriteLine("Hello guest.");
 // }
- //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Exercise 19 — Logged In User
 //Create:
 //isLoggedIn
@@ -483,24 +483,24 @@
 //User is not logged in.
 
 
- // bool isLoggedIn = true;
- //
- // Console.Write("Hello User! Please enter your name: ");
- // string? firstName = Console.ReadLine();
- //
- // if (isLoggedIn)
- // {
- //     Console.WriteLine("User is logged in.");
- //
- //     if (firstName.ToLower() == "anna")
- //     {
- //         Console.WriteLine("Welcome Anna.");
- //     }
- // }
- // else
- // {
- //     Console.WriteLine("User is not logged in.");
- // }
+// bool isLoggedIn = true;
+//
+// Console.Write("Hello User! Please enter your name: ");
+// string? firstName = Console.ReadLine();
+//
+// if (isLoggedIn)
+// {
+//     Console.WriteLine("User is logged in.");
+//
+//     if (firstName.ToLower() == "anna")
+//     {
+//         Console.WriteLine("Welcome Anna.");
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("User is not logged in.");
+// }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Exercise 20 — QA System
 //Create a variable:
@@ -520,24 +520,24 @@
 //System offline.
 
 
- // Console.Write("Hello User! Please enter your username: ");
- // string? username = Console.ReadLine();
- //
- // bool isSystemOnline = false;
- //
- // if (isSystemOnline)
- // {
- //     Console.WriteLine("System online.");
- //
- //     if (username.ToLower() == "tester")
- //     {
- //         Console.WriteLine("QA user detected.");
- //     }
- // }
- // else
- // {
- //     Console.WriteLine("System offline.");
- // }
+// Console.Write("Hello User! Please enter your username: ");
+// string? username = Console.ReadLine();
+//
+// bool isSystemOnline = false;
+//
+// if (isSystemOnline)
+// {
+//     Console.WriteLine("System online.");
+//
+//     if (username.ToLower() == "tester")
+//     {
+//         Console.WriteLine("QA user detected.");
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("System offline.");
+// }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Part 7 — Code Muscle
 //Exercise 21 — Coffee Shop
@@ -639,26 +639,26 @@
 //Access denied.
 
 
- // bool hasAccess = true;
- //
- // if (hasAccess)
- // {
- //     Console.Write("Hello User! Please enter your user name: ");
- //     string? userName = Console.ReadLine();
- //
- //     if (userName.ToLower() == "admin")
- //     {
- //         Console.WriteLine("Administrator.");
- //     }
- //     else
- //     {
- //         Console.WriteLine("Standard user.");
- //     }
- // }
- // else
- // {
- //     Console.WriteLine("Access denied.");
- // }
+// bool hasAccess = true;
+//
+// if (hasAccess)
+// {
+//     Console.Write("Hello User! Please enter your user name: ");
+//     string? userName = Console.ReadLine();
+//
+//     if (userName.ToLower() == "admin")
+//     {
+//         Console.WriteLine("Administrator.");
+//     }
+//     else
+//     {
+//         Console.WriteLine("Standard user.");
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Access denied.");
+// }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Final Challenge — Basic If Statements Center
 //Write a single program that combines all the material from the file.
@@ -699,58 +699,37 @@
 // End of program.
 
 
- // Console.Write("Hello User! Please enter your first name: ");
- // string? firstName = Console.ReadLine();
- //
- // bool isSystemOnline = true;
- //
- // string userType;
- //
- // if (isSystemOnline)
- // {
- //     Console.WriteLine("System is online.");
- //
- //     if (firstName.ToLower() == "anna")
- //     {
- //         Console.WriteLine("Welcome Anna.");
- //         userType = "QA Tester";
- //     }
- //     else
- //     {
- //         Console.WriteLine($"Welcome {firstName}.");
- //         userType = "Standard User";
- //     }
- //
- //     Console.WriteLine($"User type: {userType}");
- // }
- // else
- // {
- //     Console.WriteLine("System is offline.");
- // }
- //
- // Console.WriteLine("End of program.");
+// Console.Write("Hello User! Please enter your first name: ");
+// string? firstName = Console.ReadLine();
+//
+// bool isSystemOnline = true;
+//
+// string userType;
+//
+// if (isSystemOnline)
+// {
+//     Console.WriteLine("System is online.");
+//
+//     if (firstName.ToLower() == "anna")
+//     {
+//         Console.WriteLine("Welcome Anna.");
+//         userType = "QA Tester";
+//     }
+//     else
+//     {
+//         Console.WriteLine($"Welcome {firstName}.");
+//         userType = "Standard User";
+//     }
+//
+//     Console.WriteLine($"User type: {userType}");
+// }
+// else
+// {
+//     Console.WriteLine("System is offline.");
+// }
+//
+// Console.WriteLine("End of program.");
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //C# — Basic If Statements
 //Weak Points Practice
 
@@ -801,23 +780,23 @@
 //Unknown role
 
 
-// Console.Write("Hello User! Please Enter role: ");
+// Console.Write("Hello User! Please enter role: ");
 // string? userRole = Console.ReadLine();
 //
-// bool isAdmin = true;
-//
-// if (isAdmin)
+// if (userRole.ToLower() == "admin")
 // {
 //     Console.WriteLine("Administrator access");
-//
+// }
+// else
+// {
 //     if (userRole.ToLower() == "user")
 //     {
 //         Console.WriteLine("User access");
 //     }
-// }
-// else
-// {
-//     Console.WriteLine("Unknown role");
+//     else
+//     {
+//         Console.WriteLine("Unknown role");
+//     }
 // }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Exercise 3 — Membership
@@ -861,17 +840,19 @@
 
 // Console.Write("Hello User! Please select: qa or development: ");
 // string? userSelection = Console.ReadLine();
-
+//
+// string department;
+//
 // if (userSelection.ToLower() == "qa")
 // {
-//     Console.WriteLine("Quality Assurance");
+//     department = "Quality Assurance";
 // }
 // else
 // {
-//     Console.WriteLine("Development");
+//     department = "Development";
 // }
 //
-// Console.Write($"Department: {userSelection}");
+// Console.WriteLine($"Department: {department}");
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Exercise 5 — Selected Status
 //Ask:
@@ -887,24 +868,28 @@
 //Task status: ...
 
 
-// bool isComplete =  false;
-//
 // Console.Write("Hello User! Is the task complete? ");
 // string? taskStatus = Console.ReadLine();
 //
+// bool isComplete = false;
+//
+// if (taskStatus.ToLower() == "yes")
+// {
+//     isComplete = true;
+// }
+//
+// string status;
+//
 // if (isComplete)
 // {
-//     if (taskStatus.ToLower() == "yes")
-//     {
-//         Console.WriteLine("Completed");
-//     }
+//     status = "Completed";
 // }
 // else
 // {
-//     Console.WriteLine("Not Completed");
+//     status = "Not Completed";
 // }
 //
-// Console.WriteLine($"Task status: {taskStatus}");
+// Console.WriteLine($"Task status: {status}");
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Exercise 6 — Greeting
 //Ask the user to select:
@@ -924,16 +909,18 @@
 // Console.Write("Hello User! Please select: morning or evening ");
 // string userSelection = Console.ReadLine();
 //
+// string greeting;
+//
 // if (userSelection.ToLower() == "morning")
 // {
-//     Console.WriteLine("Good morning");
+//     greeting = "Good morning";
 // }
 // else
 // {
-//     Console.WriteLine("Good evening");
+//     greeting = "Good evening";
 // }
 //
-// Console.WriteLine($"Selected greeting: {userSelection}");
+// Console.WriteLine($"Selected greeting: {greeting}");
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Nested Decisions
 //Exercise 7 — Login
@@ -960,14 +947,14 @@
 // Console.Write("Hello User! Please enter your user name: ");
 // string? userName = Console.ReadLine();
 //
-// Console.Write("Please enter your password: ");
-// string? password =  Console.ReadLine();
-//
 // if (userName.ToLower() == "admin")
 // {
-//     if (password.ToLower() == "1234")   
+//     Console.Write("Please enter your password: ");
+//     string? password = Console.ReadLine();
+//
+//     if (password.ToLower() == "1234")
 //     {
-//             Console.WriteLine("Login successful");
+//         Console.WriteLine("Login successful");
 //     }
 //     else
 //     {
@@ -1003,11 +990,11 @@
 // Console.Write("Hello User! What is your department? ");
 // string? department = Console.ReadLine();
 //
-// Console.Write("Are you a Manager? ");
-// string? userAnswer = Console.ReadLine();
-//
 // if (department.ToLower() == "qa")
 // {
+//     Console.Write("Are you a Manager? ");
+//     string? userAnswer = Console.ReadLine();
+//
 //     if (userAnswer.ToLower() == "yes")
 //     {
 //         Console.WriteLine("QA Manager access");
@@ -1046,16 +1033,14 @@
 // Console.Write("Hello User! What is your account type? ");
 // string? accountType = Console.ReadLine();
 //
-// Console.Write("Is the account active? ");
-// string? accountActive = Console.ReadLine();
-//
 // if (accountType.ToLower() == "premium")
 // {
-//    Console.WriteLine("Premium account active");
-//   
-//     if (accountActive.ToLower() == "yes") 
+//     Console.Write("Is the account active? ");
+//     string? accountActive = Console.ReadLine();
+//
+//     if (accountActive.ToLower() == "yes")
 //     {
-//         Console.WriteLine("Your account is active");
+//         Console.WriteLine("Premium account active");
 //     }
 //     else
 //     {
@@ -1064,7 +1049,7 @@
 // }
 // else
 // {
-//         Console.WriteLine("Standard account");
+//     Console.WriteLine("Standard account");
 // }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Exercise 10 — Employee System
@@ -1096,26 +1081,33 @@
 // Console.Write("What is your employee type? ");
 // string? employeeType = Console.ReadLine();
 //
-// Console.Write("What is your security code? ");
-// string? securityCode = Console.ReadLine();
-//
 // if (employeeType.ToLower() == "manager")
 // {
-//    if (securityCode.ToLower() == "5555")
-//    {
-//        Console.Write("Manager access granted");
-//    }
-//    else
-//    {
-//         Console.Write("Invalid security code");
-//    }
+//     Console.Write("What is your security code? ");
+//     string? securityCode = Console.ReadLine();
+//
+//     if (securityCode == "5555")
+//     {
+//         Console.WriteLine("Manager access granted");
+//     }
+//     else
+//     {
+//         Console.WriteLine("Invalid security code");
+//     }
 // }
 // else
 // {
-//     Console.Write("Unknown employee type");
+//     if (employeeType.ToLower() == "employee")
+//     {
+//         Console.WriteLine("Employee access granted");
+//     }
+//     else
+//     {
+//         Console.WriteLine("Unknown employee type");
+//     }
 // }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//Combined Practice 🔥
+//Combined Practice
 //Exercise 11
 //Ask:
 //System:
@@ -1146,24 +1138,28 @@
 // Console.Write("What is your system? ");
 // string? system = Console.ReadLine();
 //
-// Console.Write("Are you QA? ");
-// string? role = Console.ReadLine();
+// string access;
 //
 // if (system.ToLower() == "test")
 // {
-//  Console.WriteLine("Test Access");
+//     Console.Write("Are you QA? ");
+//     string? role = Console.ReadLine();
 //
-//  if (role.ToLower() == "yes")
-//  {
-//   Console.WriteLine("QA Test Access");
-//  }
+//     if (role.ToLower() == "yes")
+//     {
+//         access = "QA Test Access";
+//     }
+//     else
+//     {
+//         access = "Test Access";
+//     }
 // }
 // else
 // {
-//  Console.WriteLine("Production Access");
+//     access = "Production Access";
 // }
-
-//Console.WriteLine($"Access: {system}");
+//
+// Console.WriteLine($"Access: {access}");
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Final Challenge 
 //Request:
@@ -1196,17 +1192,545 @@
 //Final access: ...
 
 
+// Console.Write("Enter user type: ");
+// string? userType = Console.ReadLine();
+//
+// string finalAccess;
+//
+// if (userType.ToLower() == "admin")
+// {
+//     Console.Write("Enter access code: ");
+//     string? accessCode = Console.ReadLine();
+//
+//     if (accessCode.ToLower() == "abc")
+//     {
+//         finalAccess = "Full Access";
+//     }
+//     else
+//     {
+//         finalAccess = "Restricted Access";
+//     }
+// }
+// else
+// {
+//     if (userType.ToLower() == "employee")
+//     {
+//         finalAccess = "Employee Access";
+//     }
+//     else
+//     {
+//         finalAccess = "Unknown Access";
+//     }
+// }
+//
+// Console.WriteLine($"Final access: {finalAccess}");
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+//C# — Basic If Statements Practice
+//Exercise 1 — Task Status
+//Create a variable named:
+//isFinished
+
+//The variable should be of type `bool`.
+//If its value is `true`, print:
+//Task completed
+
+//else print:
+//Task not completed
 
 
+// bool isFinished = false;
+//
+// if (isFinished)
+// {
+//  Console.WriteLine("Task completed");
+// }
+// else
+// {
+//   Console.WriteLine("Task not completed");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 2 — Door Status
+//Create a `bool` variable named:
+//isDoorOpen
+
+//If the door is open, print:
+//The door is open
+
+//else:
+//The door is closed
 
 
+// bool isDoorOpen = false;
+//
+// if (isDoorOpen)
+// {
+//  Console.WriteLine("The door is open");
+// }
+// else
+// {
+//  Console.WriteLine("The door is closed");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 3 — Connection
+//Create a variable:
+//isConnected
+
+//If the user is connected, print:
+//Connected
+
+//If not:
+//Disconnected
 
 
+// bool isConnected = false;
+//
+// if (isConnected)
+// {
+//  Console.WriteLine("Connected");
+// }
+// else
+// {
+//   Console.WriteLine("Disconnected");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 4 — Correct Name
+//Ask the user:
+//Enter your name:
+
+//If the user Enter:
+//Anna
+
+//Print:
+//Hello Anna
+
+//Otherwise print:
+//Unknown user
 
 
+// Console.Write("Hello User! Please enter your name: ");
+// string? firstName = Console.ReadLine();
+//
+// if (firstName.ToLower() == "anna")
+// {
+//  Console.WriteLine("Hello Anna");
+// }
+// else
+// {
+//  Console.WriteLine("Unknown user");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 5 — Case Insensitive Name
+//Ask the user:
+//Enter your name:
+
+//The system should recognize the name:
+//Anna
+
+//even if the user writes it in different uppercase and lowercase forms.
+
+//For example, all of these should be considered the same name:
+//anna
+//ANNA
+//Anna
+//aNnA
+
+//If the name matches:
+//Welcome Anna
+
+//Otherwise:
+//Welcome guest
 
 
+// Console.Write("Hello User! Please enter your name: ");
+// string? firstName = Console.ReadLine();
+//
+// if (firstName.ToLower() == "anna")
+// {
+//  Console.WriteLine("Welcome Anna");
+// }
+// else
+// {
+//  Console.WriteLine("Welcome guest");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 6 — Answer Check
+//Ask the user:
+//Do you like C#?
+
+//The system should receive the answer:
+//yes
+//Regardless of case.
+
+//If the answer is correct:
+//Great!
+
+//else:
+//Maybe later
 
 
+// Console.Write("Hello User! Do you like C#?");
+// string? userInput = Console.ReadLine();
+//
+// if (userInput.ToLower() == "yes")
+// {
+//  Console.WriteLine("Great!");
+// }
+// else
+// {
+//  Console.WriteLine("Maybe later");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 7 — User Role
+//Ask:
+//Enter role:
+
+//If the user enters:
+//admin
+//Regardless of case, print:
+//Administrator
+
+//Otherwise:
+//Regular user
+
+
+// Console.Write("Hello User! Please enter role:");
+// string? userRole = Console.ReadLine();
+//
+// if (userRole.ToLower() == "admin")
+// {
+//  Console.WriteLine("Administrator");
+// }
+// else
+// {
+//  Console.WriteLine("Regular user");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 8 — Favorite Language
+//Ask the user:
+//Enter your favorite programming language:
+
+//If they type:
+//c#
+
+//Print:
+//Good choice
+
+//else:
+//Different choice
+
+
+// Console.Write("Hello User! Please enter your favorite programming language: ");
+// string? userInput = Console.ReadLine();
+//
+// if (userInput.ToLower() == "c#")
+// {
+//     Console.WriteLine("Good choice");
+// }
+// else
+// {
+//     Console.WriteLine("Different choice");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Nested If Statements
+//Exercise 9 — Member Check
+//Ask the user:
+//Enter your name:
+
+//If the name is:
+//anna
+
+//Check within the same path a `bool` variable condition called:
+//isMember
+
+//If `isMember` is `true`:
+//Welcome Anna
+//Member access granted
+
+//If `isMember` is `false`:
+//Welcome Anna
+//Member access denied
+
+//If the name is not Anna at all:
+//Unknown user
+
+//The name comparison should work regardless of uppercase or lowercase letters.
+
+
+// Console.WriteLine("Hello User! Please enter your name:");
+// string? firstName = Console.ReadLine();
+//
+// bool isMember = false;
+//
+// if (firstName.ToLower() == "anna")
+// {
+//     if (isMember)
+//     {
+//         Console.WriteLine("Welcome Anna");
+//         Console.WriteLine("Member access granted");
+//     }
+//     else
+//     {
+//         Console.WriteLine("Welcome Anna");
+//         Console.WriteLine("Member access denied");
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Unknown user");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 10 — Admin Permission
+//Ask the user:
+//Enter role:
+
+//If the role is:
+//admin
+
+//Check a `bool` variable named:
+//hasPermission
+
+//If permission is granted:
+//Admin recognized
+//Permission granted
+
+//If no permission is granted:
+//Admin recognized
+//Permission denied
+
+//If the role is not `admin`:
+//Not an administrator
+
+//Again, uppercase and lowercase letters are not important here.
+
+
+// Console.Write("Hello User! Please enter role: ");
+// string? userRole = Console.ReadLine();
+//
+// bool hasPermission = false;
+//
+// if (userRole.ToLower() == "admin")
+// {
+//     if (hasPermission)
+//     {
+//         Console.WriteLine("Admin recognized");
+//         Console.WriteLine("Permission granted");
+//     }
+//     else
+//     {
+//         Console.WriteLine("Admin recognized");
+//         Console.WriteLine("Permission denied");
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Not an administrator");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ## Exercise 11 — Registered Student
+//
+// Request:
+//
+// ```text
+// Enter student name:
+// ```
+//
+// If the name is:
+//
+// ```text
+// dan
+// ```
+//
+// Check variable:
+//
+// ```csharp
+// isRegistered
+// ```
+//
+// If it is `true`:
+//
+// ```text
+// Student found
+// Registration confirmed
+// ```
+//
+// If it is `false`:
+//
+// ```text
+// Student found
+// Not registered
+// ```
+//
+// If the name is different:
+//
+// ```text
+// Student not found
+// ```
+//
+// ---
+//
+// # 🔹 Variable Scope Practice
+//
+// ## Exercise 12 — Last Name
+//
+// Request:
+//
+// ```text
+// Enter first name:
+// ```
+//
+// Create a variable named:
+//
+// ```csharp
+// lastName
+// ```
+//
+// If the first name is:
+//
+// ```text
+// tim
+// ```
+//
+// The value of `lastName` should be:
+//
+// ```text
+// Corey
+// ```
+//
+// Otherwise it should be For:
+//
+// ```text
+// Smith
+// ```
+//
+// **After all the conditions have been met**, print `lastName`.
+//
+// ---
+//
+// ## Exercise 13 — Access Message
+//
+// Prompt:
+//
+// ```text
+// Enter username:
+// ```
+//
+// Create a variable named:
+//
+// ```csharp
+// message
+// ```
+//
+// If the username is:
+//
+// ```text
+// admin
+// ```
+//
+// Enter `message`:
+//
+// ```text
+// Administrator access
+// ```
+//
+// Otherwise enter:
+//
+// ```text
+// User access
+// ```
+//
+// After the conditions have been met, print `message`.
+//
+// ---
+//
+// ## Exercise 14 — Department
+//
+// Prompt:
+//
+// ```text
+// Enter employee name:
+//
+// ```
+//
+// Create a variable:
+//
+// ```csharp
+// department
+// ```
+//
+// If the name is:
+//
+// ```text
+// david
+// ```
+//
+// The value will be:
+//
+// ```text
+// Development
+// ```
+//
+// Otherwise:
+//
+// ```text
+// General
+// ```
+//
+// After the condition print:
+//
+// ```text
+// Department: [department]
+//
+// ```
+//
+// ---
+//
+// # 🔥 Final Challenge — Basic Login System
+//
+// Create a program that prompts:
+//
+// ```text
+// Enter username:
+//
+// ```
+//
+// The special user in the system is:
+//
+// ```text
+// anna
+// ```
+//
+// The name should be case-insensitive.
+//
+// If it is Anna, check a `bool` variable named:
+//
+// ```csharp
+// isActive
+// ```
+//
+// If the user is active, the program should set the variable named:
+//
+// ```csharp
+// accessMessage
+// ```
+//
+// to the value:
+//
+// ```text
+// Active user
+// ```
+//
+// If the user is inactive, the value should be:
+//
+// ```text
+// Inactive user
+// ```
+//
+// If the username is not Anna:
+//
+// ```text
+// Unknown user
+// ```
+//
+// At the end of the program, in the case that the user is Anna, print the value found in `accessMessage`.
