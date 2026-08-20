@@ -29,13 +29,7 @@
 //{
 //    Console.WriteLine("Hello Student.");
 //}
-
-
-
-
-
-
-
+////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //if (firstName.ToLower() == "tim" &&
 //    lastName.ToLower() == "corey")
 //{
@@ -54,13 +48,6 @@
 //    Console.WriteLine("Sorry you don't have a cooler name!");
 //}
 ////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-
-
-
-
 //if (firstName.ToLower() == "tim")
 //{
 //    Console.WriteLine("You have a cool first name.");
@@ -75,9 +62,6 @@
 //    Console.WriteLine("Sorry your name isn't cooler.");
 //}
 ////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
 //int age = 73;
 
 // ==, >, >=, <, <=, != (! =)->means not equal
@@ -85,30 +69,12 @@
 //{
 //    Console.WriteLine("Sorry ,you aren't a great age.");
 //}
-
-
-
+////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //if ((age >= 40 && age < 50) ||
 //    (age >= 70 && age < 80))
 //{
 //    Console.WriteLine("You are in your 40's or 70's");
 //}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Examples and Explanations :
 

@@ -1528,209 +1528,202 @@
 //     Console.WriteLine("Not an administrator");
 // }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// ## Exercise 11 — Registered Student
-//
-// Request:
-//
-// ```text
-// Enter student name:
-// ```
-//
-// If the name is:
-//
-// ```text
-// dan
-// ```
-//
-// Check variable:
-//
-// ```csharp
-// isRegistered
-// ```
-//
-// If it is `true`:
-//
-// ```text
-// Student found
-// Registration confirmed
-// ```
-//
-// If it is `false`:
-//
-// ```text
-// Student found
-// Not registered
-// ```
-//
-// If the name is different:
-//
-// ```text
-// Student not found
-// ```
-//
-// ---
-//
-// # 🔹 Variable Scope Practice
-//
-// ## Exercise 12 — Last Name
-//
-// Request:
-//
-// ```text
-// Enter first name:
-// ```
-//
-// Create a variable named:
-//
-// ```csharp
-// lastName
-// ```
-//
-// If the first name is:
-//
-// ```text
-// tim
-// ```
-//
-// The value of `lastName` should be:
-//
-// ```text
-// Corey
-// ```
-//
-// Otherwise it should be For:
-//
-// ```text
-// Smith
-// ```
-//
-// **After all the conditions have been met**, print `lastName`.
-//
-// ---
-//
-// ## Exercise 13 — Access Message
-//
-// Prompt:
-//
-// ```text
-// Enter username:
-// ```
-//
-// Create a variable named:
-//
-// ```csharp
-// message
-// ```
-//
-// If the username is:
-//
-// ```text
-// admin
-// ```
-//
-// Enter `message`:
-//
-// ```text
-// Administrator access
-// ```
-//
-// Otherwise enter:
-//
-// ```text
-// User access
-// ```
-//
-// After the conditions have been met, print `message`.
-//
-// ---
-//
-// ## Exercise 14 — Department
-//
-// Prompt:
-//
-// ```text
-// Enter employee name:
-//
-// ```
-//
-// Create a variable:
-//
-// ```csharp
-// department
-// ```
-//
-// If the name is:
-//
-// ```text
-// david
-// ```
-//
-// The value will be:
-//
-// ```text
-// Development
-// ```
-//
-// Otherwise:
-//
-// ```text
-// General
-// ```
-//
-// After the condition print:
-//
-// ```text
-// Department: [department]
-//
-// ```
-//
-// ---
-//
-// # 🔥 Final Challenge — Basic Login System
-//
-// Create a program that prompts:
-//
-// ```text
-// Enter username:
-//
-// ```
-//
-// The special user in the system is:
-//
-// ```text
-// anna
-// ```
-//
-// The name should be case-insensitive.
-//
-// If it is Anna, check a `bool` variable named:
-//
-// ```csharp
-// isActive
-// ```
-//
-// If the user is active, the program should set the variable named:
-//
-// ```csharp
-// accessMessage
-// ```
-//
-// to the value:
-//
-// ```text
-// Active user
-// ```
-//
-// If the user is inactive, the value should be:
-//
-// ```text
-// Inactive user
-// ```
-//
-// If the username is not Anna:
-//
-// ```text
-// Unknown user
-// ```
-//
-// At the end of the program, in the case that the user is Anna, print the value found in `accessMessage`.
+//Exercise 11 — Registered Student
+//Request:
+//Enter student name:
+
+//If the name is:
+//dan
+//Check variable:
+//isRegistered
+
+//If it is `true`:
+//Student found
+//Registration confirmed
+
+//If it is `false`:
+//Student found
+//Not registered
+
+//If the name is different:
+//Student not found
+
+
+// Console.Write("Hello Student! Please write your first name: ");
+// string? firstName = Console.ReadLine();
+//
+// bool isRegistered = false;
+//
+// if (firstName.ToLower() == "dan")
+// {
+//     if (isRegistered)
+//     {
+//         Console.WriteLine("Student found");
+//         Console.WriteLine("Registration confirmed");
+//     }
+//     else
+//     {
+//         Console.WriteLine("Student found");
+//         Console.WriteLine("Not registered");
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Student not found");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Variable Scope Practice
+//Exercise 12 — Last Name
+//Request:
+//Enter first name:
+
+//Create a variable named:
+//lastName
+
+//If the first name is:
+//tim
+
+//The value of `lastName` should be:
+//Corey
+
+//Otherwise it should be For:
+//Smith
+
+//After all the conditions have been met, print `lastName`.
+
+
+// Console.Write("Hello User! Please enter your first name:");
+// string? firstName = Console.ReadLine();
+//
+// string lastName;
+//
+// if (firstName.ToLower() == "tim")
+// {
+//     lastName = "corey";
+// }
+// else
+// {
+//     lastName = "smith";
+// }
+//
+// Console.WriteLine(lastName);
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 13 — Access Message
+//Ask:
+//Enter username:
+
+//Create a variable named:
+//message
+
+//If the username is:
+//admin
+
+//Enter `message`:
+//Administrator access
+
+//Otherwise enter:
+//User access
+
+//After the conditions have been met, print `message`.
+
+
+// Console.Write("Hello User! What is your user name? ");
+// string? userName = Console.ReadLine();
+//
+// string message;
+//
+// if (userName.ToLower() == "admin")
+// {
+//     message = "Administrator access";
+// }
+// else
+// {
+//     message = "User access";
+// }
+//
+// Console.WriteLine(message);
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 14 — Department
+//Ask:
+//Enter employee name:
+
+//Create a variable:
+//department
+
+//If the name is:
+//david
+//The value will be:
+//Development
+
+//Otherwise:
+//General
+
+//After the condition print:
+//Department: [department]
+
+
+// Console.Write("Hello Employee! What is your name? ");
+// string? employeeName = Console.ReadLine();
+//
+// string department;
+//
+// if (employeeName.ToLower() == "david")
+// {
+//     department = "Development";
+// }
+// else
+// {
+//     department = "General";
+// }
+//
+// Console.WriteLine($"Department: {department}");
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Final Challenge — Basic Login System
+//Create a program that prompts:
+//Enter username:
+
+//The special user in the system is:
+//anna
+//The name should be case-insensitive.
+
+//If it is Anna, check a `bool` variable named:
+//isActive
+
+//If the user is active, the program should set the variable named:
+//accessMessage
+//to the value:
+//Active user
+
+//If the user is inactive, the value should be:
+//Inactive user
+
+//If the username is not Anna:
+//Unknown user
+
+//At the end of the program, in the case that the user is Anna, print the value found in `accessMessage`.
+
+
+// Console.Write("Hello User! Please enter your user name: ");
+// string? userName = Console.ReadLine();
+//
+// bool isActive = false;
+//
+// string accessMessage;
+//
+// if (userName.ToLower() == "anna")
+// {
+//     if (isActive)
+//     {
+//         accessMessage = "Active user";
+//     }
+//     else
+//     {
+//         accessMessage = "Inactive user";
+//     }
+//
+//     Console.WriteLine(accessMessage);
+// }
+// else
+// {
+//     Console.WriteLine("Unknown user");
+// }
