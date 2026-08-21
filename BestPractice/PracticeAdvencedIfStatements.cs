@@ -136,96 +136,272 @@
 //Access denied
 
 
-
+// bool hasAccess = false;
+//
+// if (hasAccess)
+// {
+//     Console.WriteLine("Access granted");
+// }
+// else
+// {
+//     Console.WriteLine("Access denied");
+// }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// ## Exercise 5 — Exact Age
-// Create:
-// int age
-// If the age is exactly `25`:
-// Perfect age
-// Otherwise:
-// Different age
-// ## Exercise 6 — Not This Age
-// Create:
-// int age
-// If the age is anything except `30`:
-// Age is not 30
-// If the age is `30`:
-// Age is 30
-// ## Exercise 7 — Minimum Age
-// Create:
-// int age
-// Rules:
-// * Age `18` or higher:
-// Allowed
-// * Anything below `18`:
-// Not allowed
-// ## Exercise 8 — Maximum Age
-// Create:
-// int age
-// Rules:
-// * Age `65` or lower:
-// Standard group
-// * Anything above `65`:
-// Senior group
-// ## Exercise 9 — Number Range
-// Create:
-// int number
-// Print:
-// Inside range
-// only when the number is between `20` and `29`, inclusive `20` but not including `30`.
-// For every other value:
-// Outside range
-// ## Exercise 10 — Age Groups
-// Create:
-// int age
-// Rules:
-// * From `10` up to but not including `20`:
-// Teen range
-// * From `20` up to but not including `30`:
-// Twenties
-// * From `30` up to but not including `40`:
-// Thirties
-// * Anything else:
-// Another age
-// ## Exercise 11 — Special Name
-// Ask for:
-// * First name
-// * Last name
-// Print:
-// Special user
-// when **at least one** of these is true:
-// * First name is `anna`
-// * Last name is ``stone''
-// Otherwise:
-// Regular user
-// Uppercase and lowercase letters should not matter.
-// ## Exercise 12 — Exact Person
-// Ask for:
-// * First name
-// * Last name
-// Only the exact combination:
-// michael
-// Jones
-// should print:
-// Exact person found
-// Any other combination should print:
-// Different person
-// Uppercase and lowercase letters should not matter.
-// ## Exercise 13 — Login Classification
-// Ask for:
-// * First name
-// * Last name
-// Rules:
-// ### `alex` + `king`
-// Full match
-// ### Only `alex`
-// First name match
-// ### Only `king`
-// Last name match
-// ### Neither
-// No match
-// Uppercase and lowercase letters should not matter.
+//Exercise 5 — Exact Age
+//Create:
+//int age
+
+//If the age is exactly `25`:
+//Perfect age
+
+//Otherwise:
+//Different age
+
+
+// int age = 25;
+//
+// if (age == 25)
+// {
+//     Console.WriteLine("Perfect age");
+// }
+// else
+// {
+//     Console.WriteLine("Different age");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 6 — Not This Age
+//Create:
+//int age
+
+//If the age is anything except `30`:
+//Age is not 30
+
+//If the age is `30`:
+//Age is 30
+
+
+// int age = 30;
+//
+// if (age != 30)
+// {
+//     Console.WriteLine("YAge is not 30");
+// }
+// else
+// {
+//     Console.WriteLine("Age is 30");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 7 — Minimum Age
+//Create:
+//int age
+//Rules:
+//Age `18` or higher:
+//Allowed
+
+//Anything below `18`:
+//Not allowed
+
+
+// int age = 18;
+//
+// if (age >= 18)
+// {
+//     Console.WriteLine("Allowed");
+// }
+// else
+// {
+//     Console.WriteLine("Not allowed");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 8 — Maximum Age
+//Create:
+//int age
+//Rules:
+//Age `65` or lower:
+//Standard group
+
+//Anything above `65`:
+//Senior group
+
+
+// int age = 65;
+//
+// if (age <= 65)
+// {
+//     Console.WriteLine("Standard group");
+// }
+// else
+// {
+//     Console.WriteLine("Senior group");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 9 — Number Range
+//Create:
+//int number
+
+//Print:
+//Inside range
+
+//only when the number is between `20` and `29`, inclusive `20` but not including `30`.
+//For every other value:
+//Outside range
+
+
+// int number = 30;
+//
+// if (number >= 20 && number < 29)
+// {
+//     Console.WriteLine("Inside range");
+// }
+// else
+// {
+//     Console.WriteLine("Outside range");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 10 — Age Groups
+//Create:
+//int age
+
+//Rules:
+//From `10` up to but not including `20`:
+//Teen range
+
+//From `20` up to but not including `30`:
+//Twenties
+
+//From `30` up to but not including `40`:
+//Thirties
+
+//Anything else:
+//Another age
+
+
+// int age = 30;
+//
+// if (age >= 10 && age < 20)
+// {
+//     Console.WriteLine("Teen range");
+// }
+// else if (age >= 20 && age < 30)
+// {
+//     Console.WriteLine("Twenties");
+// }
+// else if (age >= 30 && age < 40)
+// {
+//     Console.WriteLine("Thirties");
+// }
+// else
+// {
+//     Console.WriteLine("Another age");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 11 — Special Name
+//Ask for:
+//First name
+//Last name
+
+//Print:
+//Special user
+//when at least one of these is true:
+//First name is `anna`
+//Last name is ``stone''
+
+//Otherwise:
+//Regular user
+
+//Uppercase and lowercase letters should not matter.
+
+
+// Console.Write("What is your First name? ");
+// string? firstName = Console.ReadLine();
+//
+// Console.Write("What is your Last name? ");
+// string? lastName = Console.ReadLine();
+//
+// if (firstName.ToLower() == "anna" || lastName.ToLower() == "stone")
+// {
+//     Console.WriteLine("Special user");
+// }
+// else
+// {
+//     Console.WriteLine("Regular user");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 12 — Exact Person
+//Ask for:
+//First name
+//Last name
+//Only the exact combination:
+//michael
+//Jones
+//should print:
+//Exact person found
+
+//Any other combination should print:
+//Different person
+
+//Uppercase and lowercase letters should not matter.
+
+
+// Console.Write("What is your First name? ");
+// string? firstName = Console.ReadLine();
+//
+// Console.Write("What is your Last name? ");
+// string? lastName = Console.ReadLine();
+//
+// if (firstName.ToLower() == "michael" && lastName.ToLower() == "Jones")
+// {
+//     Console.WriteLine("Exact person found");
+// }
+// else
+// {
+//     Console.WriteLine("Different person");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 13 — Login Classification
+//Ask for:
+//First name
+//Last name
+
+//Rules:
+//`alex` + `king`
+//Full match
+
+//Only `alex`
+//First name match
+
+//Only `king`
+//Last name match
+
+//Neither:
+//No match
+
+//Uppercase and lowercase letters should not matter.
+
+
+// Console.Write("What is your First name? ");
+// string? firstName = Console.ReadLine();
+//
+// Console.Write("What is your Last name? ");
+// string? lastName = Console.ReadLine();
+//
+// if (firstName.ToLower() == "alex" && lastName.ToLower() == "king")
+// {
+//     Console.WriteLine("Full match");
+// }
+// else if (firstName.ToLower() == "alex")
+// {
+//     Console.WriteLine("First name match");
+// }
+// else if (lastName.ToLower() == "king")
+// {
+//     Console.WriteLine("Last name match");
+// }
+// else
+// {
+//     Console.WriteLine("No match");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // ## Exercise 14 — Two Valid Age Ranges
 // Create:
 // int age
@@ -237,6 +413,7 @@
 // Otherwise:
 // Age group not accepted
 // Pay attention to the exact beginning and end of each range.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // ## Exercise 15 — Three Valid Age Ranges
 // Create:
 // int age
