@@ -184,7 +184,7 @@
 //
 // if (age != 30)
 // {
-//     Console.WriteLine("YAge is not 30");
+//     Console.WriteLine("Your Age is not 30");
 // }
 // else
 // {
@@ -448,18 +448,18 @@
 //Regular age range
 
 
-int age = 10;
-
-if ((age >= 10 && age < 20) ||
-    (age >= 30 && age < 40) ||
-    (age >= 70 && age < 80))
-{
-    Console.WriteLine("Special age range");
-}
-else
-{
-    Console.WriteLine("Regular age range");
-}
+// int age = 10;
+//
+// if ((age >= 10 && age < 20) ||
+//     (age >= 30 && age < 40) ||
+//     (age >= 70 && age < 80))
+// {
+//     Console.WriteLine("Special age range");
+// }
+// else
+// {
+//     Console.WriteLine("Regular age range");
+// }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Exercise 16 — Boundary Test
 //Create:
@@ -531,21 +531,18 @@ else
 // Console.Write("What is your last name? ");
 // string? lastName = Console.ReadLine();
 //
-// if (firstName.ToLower() == "tim" &&
-//     lastName.ToLower() == "white")
-// {
-//     Console.WriteLine("Complete match");
-// }
-// else
-// {
-//     Console.WriteLine("Name matched");
-// }
-//
 // int age = 25;
 //
-// if (age >= 20 && age < 29)
+// if (firstName.ToLower() == "tom" &&
+//     lastName.ToLower() == "white" &&
+//     age >= 20 && age < 30)
 // {
 //     Console.WriteLine("Complete match");
+// }
+// else if (firstName.ToLower() == "tom" &&
+//          lastName.ToLower() == "white")
+// {
+//     Console.WriteLine("Name matched");
 // }
 // else
 // {
@@ -626,28 +623,26 @@ else
 // Console.Write("What is your last name? ");
 // string? lastName = Console.ReadLine();
 //
-// if (firstName.ToLower() == "emma" && lastName.ToLower() == "wood")
+// int age = 40;
+//
+// if (firstName.ToLower() == "emma" &&
+//     lastName.ToLower() == "wood" &&
+//     age >= 30 && age < 40)
 // {
 //     Console.WriteLine("VIP customer");
 // }
-// else if (firstName.ToLower() == "emma" || lastName.ToLower() == "wood")
+// else if (firstName.ToLower() == "emma" ||
+//          lastName.ToLower() == "wood")
 // {
 //     Console.WriteLine("Known customer");
+// }
+// else if (age >= 60 && age < 70)
+// {
+//     Console.WriteLine("Senior customer");
 // }
 // else
 // {
 //     Console.WriteLine("Standard customer");
-// }
-//
-// int age = 40;
-//
-// if (age >= 30 && age < 39)
-// {
-//     Console.WriteLine("VIP customer");
-// }
-// else
-// {
-//     Console.WriteLine("Senior customer");
 // }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Exercise 20 — Complex Range Check
@@ -677,7 +672,8 @@ else
 
 // int age = 50;
 //
-// if (age >= 40 && age < 49 ||  age >= 70 && age < 79)
+// if ((age >= 40 && age < 50) ||
+//     (age >= 70 && age < 80))
 // {
 //     Console.WriteLine("Accepted");
 // }
@@ -724,26 +720,524 @@ else
 // Console.Write("What is your last name? ");
 // string? lastName = Console.ReadLine();
 //
-// if (firstName.ToLower() == "tim" && lastName.ToLower() == "corey")
+// int age = 43;
+//
+// if (firstName.ToLower() == "tim" &&
+//     lastName.ToLower() == "corey" &&
+//     ((age >= 40 && age < 50) ||
+//      (age >= 70 && age < 80)))
+// {
+//     Console.WriteLine("Special professor");
+// }
+// else if (firstName.ToLower() == "tim" &&
+//          lastName.ToLower() == "corey")
 // {
 //     Console.WriteLine("Special name");
 // }
-// else if (firstName.ToLower() == "tim" || lastName.ToLower() == "corey")
+// else if (firstName.ToLower() == "tim" ||
+//          lastName.ToLower() == "corey")
 // {
 //     Console.WriteLine("Partial name match");
+// }
+// else if ((age >= 40 && age < 50) ||
+//          (age >= 70 && age < 80))
+// {
+//     Console.WriteLine("Special age");
 // }
 // else
 // {
 //     Console.WriteLine("Regular user");
 // }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//C# — Advanced If Statements
+//Exercise 1 — Exact Range
+//Create:
+//int age
+
+//Rules:
+//Age from `20` through `29`:
+//Valid age
+
+//Anything else:
+//Invalid age
+
+//Your program must give the correct result for:
+//19
+//20
+//29
+//30
+
+
+// int age = 19;
 //
-// int age = 43;
-//
-// if (age >= 40 &&  age < 49 || age >= 70 && age < 79)
+// if (age >= 20 && age < 30)
 // {
-//     Console.WriteLine("Special professor");
+//     Console.WriteLine("Valid age");
 // }
 // else
 // {
+//     Console.WriteLine("Invalid age");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 2 — Two Age Ranges
+//Create:
+//int age
+
+//The accepted ranges are:
+//30–39
+//60–69
+
+//If the age belongs to one of these ranges:
+//Accepted range
+
+//Otherwise:
+//Rejected range
+
+//Make sure the program correctly handles:
+//29
+//30
+//39
+//40
+//59
+//60
+//69
+//70
+
+
+// int age = 50;
+//
+// if ((age >= 30 && age < 40) || 
+//     (age >= 60  && age < 70))
+// {
+//     Console.WriteLine("Accepted range");
+// }
+// else
+// {
+//     Console.WriteLine("Rejected range");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 3 — Three Score Groups
+//Create:
+//int score
+
+//Rules:
+//From `10` through `19`:
+//Group A
+
+//From `20` through `29`:
+//Group B
+
+//From `30` through `39`:
+//Group C
+
+//Anything else:
+//No group
+
+
+// int score = 29;
+//
+// if (score >= 10 && score < 20)
+// {
+//     Console.WriteLine("Group A");
+// }
+// else if (score >= 20 && score < 30)
+// {
+//     Console.WriteLine("Group B");
+// }
+// else if (score >= 30 && score < 40)
+// {
+//     Console.WriteLine("Group C");
+// }
+// else
+// {
+//     Console.WriteLine("No group");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 4 — Exact Employee
+//Ask the user for:
+//First name
+//Last name
+
+//The exact employee is:
+//First name: michael
+//Last name: green
+
+//If both match:
+//Employee found
+
+//Otherwise:
+//Employee not found
+
+//Uppercase and lowercase letters should not matter.
+
+//For example, these should all be treated the same:
+//Michael
+//MICHAEL
+//michael
+//MiChAeL
+
+
+// Console.Write("What is your first name? ");
+// string? firstName = Console.ReadLine();
+//
+// Console.Write("What is your last name? ");
+// string? lastName = Console.ReadLine();
+//
+// if (firstName.ToLower() == "michael" && lastName.ToLower() == "green")
+// {
+//     Console.WriteLine("Employee found");
+// }
+// else
+// {
+//     Console.WriteLine("Employee not found");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 5 — Name And Age
+//Ask the user for:
+//First name
+//Last name
+
+//Create:
+// int age
+
+//Rules:
+//If:
+//First name is `david`
+//Last name is `black`
+//Age is from `30` through `39`
+
+//print:
+//Complete match
+
+//If both names match, but the age does not belong to that range:
+//Name match only
+
+//Anything else:
+//No match
+
+//Uppercase and lowercase letters in the names should not matter.
+
+
+// Console.Write("What is your first name? ");
+// string? firstName = Console.ReadLine();
+//
+// Console.Write("What is your last name? ");
+// string? lastName = Console.ReadLine();
+//
+// int age = 35;
+//
+// if (firstName.ToLower() == "david" && lastName.ToLower() == "black" && age >= 30 && age < 40)
+// {
+//     Console.WriteLine("Complete match");
+// }
+// else if (firstName.ToLower() == "david" && lastName.ToLower() == "black")
+// {
+//     Console.WriteLine("Name match only");
+// }
+// else
+// {
+//     Console.WriteLine("No match");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 6 — Customer Level
+//Ask for:
+//First name
+//Last name
+
+//Create:
+//int age
+
+//Rules:
+//The user is a VIP when:
+//First name is `anna`
+//Last name is `stone`
+//Age is from `40` through `49`
+
+//Print:
+//VIP customer
+
+//If both names match but the VIP rule does not:
+//Known customer
+
+//If only one part of the name matches:
+//Partial match
+
+//Anything else:
+//Unknown customer
+
+//Uppercase and lowercase letters should not matter.
+
+
+// Console.Write("What is your first name? ");
+// string? firstName = Console.ReadLine();
+//
+// Console.Write("What is your last name? ");
+// string? lastName = Console.ReadLine();
+//
+// int age = 45;
+//
+// if (firstName.ToLower() == "anna" && lastName.ToLower() == "stone" && age >= 40 && age < 50)
+// {
+//     Console.WriteLine("VIP customer");
+// }
+// else if (firstName.ToLower() == "anna" && lastName.ToLower() == "stone")
+// {
+//     Console.WriteLine("Known customer");
+// }
+// else if (firstName.ToLower() == "anna" || lastName.ToLower() == "stone")
+// {
+//     Console.WriteLine("Partial match");
+// }
+// else
+// {
+//     Console.WriteLine("Unknown customer");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 7 — Special User With Two Age Ranges
+//Ask for:
+//First name
+//Last name
+
+//Create:
+//int age
+
+//The user is considered a special user only when:
+//First name is `john`
+//Last name is `white`
+//and the age belongs to either:
+//20–29
+//or:
+//50–59
+
+//Print:
+//Special user
+
+//If both names match, but the age does not belong to either age range:
+//Special name only
+
+//If only one name matches:
+//Partial name
+
+//If no part of the name matches:
+//Regular user
+
+
+// Console.Write("What is your first name? ");
+// string? firstName = Console.ReadLine();
+//
+// Console.Write("What is your last name? ");
+// string? lastName = Console.ReadLine();
+//
+// int age = 35;
+//
+// if (firstName.ToLower() == "john" && 
+//      lastName.ToLower() == "white" && 
+//      ((age >= 20 && age < 30) || 
+//     (age >= 50 &&  age < 60)))
+// {
+//     Console.WriteLine("Special user");
+// }
+// else if (firstName.ToLower() == "john" &&  lastName.ToLower() == "white")
+// {
+//     Console.WriteLine("Special name only");
+// }
+// else if (firstName.ToLower() == "john" ||  lastName.ToLower() == "white")
+// {
+//     Console.WriteLine("Partial name");
+// }
+// else
+// {
+//     Console.WriteLine("Regular user");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 8 — Employee Classification
+//Ask the user for:
+//First name
+//Last name
+
+//Create:
+//int age
+
+//Rules:
+//First name:
+//sarah
+//Last name:
+//brown
+//Age:
+//30–39
+
+//Print:
+//Manager
+
+//If the first name and last name match, but the age does not:
+//Employee
+
+//If either the first name is `sarah` or the last name is `brown`:
+//Known person
+
+//If the name does not match at all, but the age is from `60` through `69`:
+//Special age
+
+//Anything Else
+//Unknown person
+
+//Uppercase and lowercase letters should not matter.
+
+
+// Console.Write("What is your first name? ");
+// string? firstName = Console.ReadLine();
+//
+// Console.Write("What is your last name? ");
+// string? lastName = Console.ReadLine();
+//
+// int age = 35;
+//
+// if (firstName.ToLower() == "sarah" && lastName.ToLower() == "brown" && age >= 30 && age < 40)
+// {
+//     Console.WriteLine("Manager");
+// }
+// else if (firstName.ToLower() == "sarah" && lastName.ToLower() == "brown")
+// {
+//     Console.WriteLine("Employee");
+// }
+// else if (firstName.ToLower() == "sarah" || lastName.ToLower() == "brown")
+// {
+//     Console.WriteLine("Known person");
+// }
+// else if (age >= 60 && age < 70)
+// {
 //     Console.WriteLine("Special age");
+// }
+// else
+// {
+//     Console.WriteLine("Unknown person");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 9 — Three Special Age Ranges
+//Create:
+//int age
+
+//Accepted age ranges:
+//10–19
+//40–49
+//70–79
+
+//If the age belongs to any accepted range:
+//Accepted
+
+//Otherwise:
+//Rejected
+
+//Test your program with:
+//9
+//10
+//19
+//20
+
+//39
+//40
+//49
+//50
+
+//69
+//70
+//79
+//80
+
+
+// int age = 35;
+//
+// if ((age >= 10 && age < 20) ||
+//     (age >= 40 && age < 50) ||
+//     (age >=70 && age < 80))
+// {
+//     Console.WriteLine("Accepted");
+// }
+// else
+// {
+//     Console.WriteLine("Rejected");
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Final Challenge — Advanced Classification
+//Ask the user for:
+//First name
+//Last name
+
+//Create:
+//int age
+
+//The program must produce one classification for the user.
+
+//The following must all match:
+//First name:
+//alex
+
+//Last name:
+// king
+
+//Age belongs to either:
+//30–39
+//or:
+//70–79
+
+//Print:
+//Full special match
+
+//If the first name and last name match, but the age does not satisfy the full special match requirements
+//Full name match
+
+//If only one of these matches:
+//First name is `alex`
+//Last name is `king`
+
+//Print:
+//Partial name match
+
+//If neither part of the name matches, but the age belongs to either:
+//30–39
+//or:
+//70–79
+
+//Print:
+//Special age only
+
+//Nothing Matches
+//Regular user
+
+//Uppercase and lowercase letters in names should not matter.
+
+
+// Console.Write("What is your first name? ");
+// string? firstName = Console.ReadLine();
+//
+// Console.Write("What is your last name? ");
+// string? lastName = Console.ReadLine();
+//
+// int age = 35;
+//
+// if (firstName.ToLower() == "alex" && 
+//      lastName.ToLower() == "king" && 
+//      ((age >= 30 && age < 40) ||
+//     (age >= 70 && age < 80)))
+// {
+//     Console.WriteLine("Full special match");
+// }
+// else if (firstName.ToLower() == "alex" && 
+//                 lastName.ToLower() == "king")
+// {
+//     Console.WriteLine("Full name match");
+// }
+// else if (firstName.ToLower() == "alex" || 
+//                 lastName.ToLower() == "king")
+// {
+//     Console.WriteLine("Partial name match");
+// }
+// else if ((age >= 30 && age < 40) || 
+//                 (age >= 70 && age < 80))
+// {
+//     Console.WriteLine("Special age only");
+// }
+// else
+// {
+//     Console.WriteLine("Regular user");
 // }
