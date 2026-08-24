@@ -26,7 +26,7 @@
 //     case "red":
 //         Console.WriteLine("Stop");
 //         break;
-//     case "yello" :
+//     case "yellow" :
 //         Console.WriteLine("Get ready");
 //         break;
 //     case "green":
@@ -184,13 +184,13 @@
 //
 // switch (age)
 // {
-//     case 0 >= and < 6:
+//     case >= 0 and < 6:
 //         Console.WriteLine("Free ticket");
 //         break;
 //     case >= 6 and < 13:
 //         Console.WriteLine("Child ticket");
 //         break;
-//     case 13 >= and < 18:
+//     case >= 13  and < 18:
 //         Console.WriteLine("Teen ticket");
 //         break;
 //     case >= 18 and < 65:
@@ -290,61 +290,179 @@
 // 		break;
 // }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// ## Exercise 8 — Product Code
-// Create a variable named:
-// `productCode`
-// Possible values:
-// * `phone`
-// * `tablet`
-// * `laptop`
-// * `desktop`
-// * `tv`
-// Print:
-// * `phone` or `tablet` → `Mobile device`
-// * `laptop` or `desktop` → `Computer`
-// * `tv` → `Television`
-// * Any other value → `Unknown product`
-// Case is not important.
-// # Exercise 9 — Customer Age Group
-// Create an `int` variable named:
-// `customerAge`
-// Print:
-// * `0–12` → `Child`
-// * `13–17` → `Teenager`
-// * `18–29` → `Young adult`
-// * `30–49` → `Adult`
-// * `50–64` → `Older adult`
-// * `65` and above → `Senior`
-// Negative number:
-// `Invalid age`
-// ⚠️ Note: **I didn't give any hint here on how to construct the conditions** — the boundaries are part of the problem you have to solve yourself.
-// # Exercise 10 — Support Request
-// Create a variable named:
-// `requestType`
-// Possible values:
-// * `password`
-// * `login`
-// * `technical`
-// * `billing`
-// * `payment`
-// * `other`
-// Print:
-// * `password` and `login` → `Account support`
-// * `technical` → `Technical support`
-// * `billing` and `payment` → `Billing support`
-// * `other` → `General support`
-// Any unrecognized value:
-// `Invalid request type`
-// The system should work regardless of the case.
-// # 🏆 Final Challenge — Employee Classification
-// Create an `int` variable named:
-// `yearsOfExperience`
-// Based on the number of years of experience, print:
-// * `0` → `New employee`
-// * `1–2` → `Junior employee`
-// * `3–5` → `Experienced employee`
-// * `6–10` → `Senior employee`
-// * `11–20` → `Highly experienced employee`
-// * More than `20` → `Veteran employee`
-// If the number is negative:
-// `Invalid experience`
+//Exercise 8 — Product Code
+//Create a variable named:
+//`productCode`
+
+//Possible values:
+//`phone`
+//`tablet`
+//`laptop`
+//`desktop`
+//`tv`
+
+//Print:
+//`phone` or `tablet` → `Mobile device`
+//`laptop` or `desktop` → `Computer`
+//`tv` → `Television`
+//Any other value → `Unknown product`
+
+//Case is not important.
+
+
+// Console.Write("Please choose your product code: phone, tablet ,laptop, desktop, or tv: ");
+// string? productCode =  Console.ReadLine();
+//
+// switch (productCode.ToLower())
+// {
+//     case "phone" or "tablet":
+//         Console.WriteLine("Mobile device");
+//         break;
+//     case "laptop" or "desktop":
+//         Console.WriteLine("Computer");
+//         break;
+//     case "tv":
+//         Console.WriteLine("Television");
+//         break;
+//     default:
+//         Console.WriteLine("Unknown product");
+//         break;
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 9 — Customer Age Group
+//Create an `int` variable named:
+//`customerAge`
+
+//Print:
+//`0–12` → `Child`
+//`13–17` → `Teenager`
+//`18–29` → `Young adult`
+//`30–49` → `Adult`
+//`50–64` → `Older adult`
+//`65` and above → `Senior`
+
+//Negative number:
+//`Invalid age`
+
+
+// int customerAge = 35;
+//
+// switch (customerAge)
+// {
+//     case >= 0 and < 13: 
+//         Console.WriteLine("Child");
+//         break;
+//     case >= 13 and < 18:
+//         Console.WriteLine("Teenager");
+//         break;
+//     case >= 18 and < 30:
+//         Console.WriteLine("Young adult");
+//         break;
+//     case >= 30 and < 50:
+//         Console.WriteLine("Adult");
+//         break;
+//     case >= 50 and < 65:
+//         Console.WriteLine("Older adult");
+//         break;
+//     case >=  65:
+//         Console.WriteLine("Senior");
+//         break;
+//         default:
+//             Console.WriteLine("Invalid age");
+//             break;
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Exercise 10 — Support Request
+//Create a variable named:
+//`requestType`
+
+//Possible values:
+//`password`
+//`login`
+//`technical`
+//`billing`
+//`payment`
+//`other`
+
+//Print:
+//`password` and `login` → `Account support`
+//`technical` → `Technical support`
+//`billing` and `payment` → `Billing support`
+//`other` → `General support`
+
+//Any unrecognized value:
+//`Invalid request type`
+
+//The system should work regardless of the case.
+
+
+// Console.Write("Hello User! Please choose your request type: password, login, technical, billing, payment, other: ");
+// string? requestType  = Console.ReadLine();
+//
+// switch (requestType.ToLower())
+// {
+//     case "password":
+//     case "login":
+//         Console.WriteLine("Account support");
+//             break;
+//     case "technical":
+//         Console.WriteLine("Technical support");
+//         break;
+//     case "billing": 
+//     case "payment":
+//         Console.WriteLine("Billing support");
+//         break;
+//     case "other" :
+//         Console.WriteLine("General support");
+//         break;
+//     default:
+//         Console.WriteLine("Invalid request type");
+//         break;
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Final Challenge — Employee Classification
+//Create an `int` variable named:
+//`yearsOfExperience`
+
+//Based on the number of years of experience, print:
+//`0` → `New employee`
+//`1–2` → `Junior employee`
+//`3–5` → `Experienced employee`
+//`6–10` → `Senior employee`
+//`11–20` → `Highly experienced employee`
+//More than `20` → `Veteran employee`
+
+//If the number is negative:
+//`Invalid experience`
+
+
+// int yearsOfExperience = 15;
+//
+// switch (yearsOfExperience)
+// {
+//     case 0:
+//         Console.WriteLine("New employee");
+//         break;
+//     case >= 1 and < 3:
+//         Console.WriteLine("Junior employee");
+//         break;
+//     case >= 3 and < 6:
+//         Console.WriteLine("Experienced employee");
+//         break;
+//     case >= 6 and < 11:
+//         Console.WriteLine("Senior employee");
+//         break;
+//     case >= 11 and < 21:
+//         Console.WriteLine("Highly experienced employee");
+//         break;
+//     case > 20:
+//         Console.WriteLine("Veteran employee");
+//         break;
+//     default:
+//         Console.WriteLine("Invalid experience");
+//         break;
+// }
+
+
+
+
