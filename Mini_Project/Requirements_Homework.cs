@@ -97,23 +97,23 @@
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //we wouldn't want to use nested if statements because they take a lot of space
 
-Console.Write("Hello User! What is your first name? ");
-string firstName = Console.ReadLine();
-
-Console.Write($"Hey {firstName}, How old are you ? ");
-string ageText = Console.ReadLine();
-
-string formattedName;
+// Console.Write("Hello User! What is your first name? ");
+// string firstName = Console.ReadLine();
+//
+// Console.Write($"Hey {firstName}, How old are you ? ");
+// string ageText = Console.ReadLine();
+//
+// string formattedName;
 
 //we can write it with !
 //if (!int.TryParse(ageText, out int age))
     
 //but i recommend write it with == false because it's easy to understand  
-if (int.TryParse(ageText, out int age) == false)
-{
-    Console.WriteLine("You didn't provide a valid age.");
-    return;
-}
+// if (int.TryParse(ageText, out int age) == false)
+// {
+//     Console.WriteLine("You didn't provide a valid age.");
+//     return;
+// }
     //and we write a return statement 
     //the return exits out of the current method.
     //the current method is the static void main, we can't see it ,but it's there.
@@ -130,22 +130,22 @@ if (int.TryParse(ageText, out int age) == false)
     //we can use both 
     //se return is a nice feature to know about ,to say hey i'm done early. 
 
-if (firstName.ToLower() == "bob" || firstName.ToLower() == "sue")
-{ 
-    formattedName = $"Professor {firstName}";
-}
-else
-{
-    formattedName = firstName;
-}
-
-if (age < 21)
-{
-    Console.WriteLine($"I recommend you wait {21 - age} years, {formattedName}");
-}
-else
-{
-        Console.WriteLine($"Welcome to class {formattedName}");
-}
+// if (firstName.ToLower() == "bob" || firstName.ToLower() == "sue")
+// { 
+//     formattedName = $"Professor {firstName}";
+// }
+// else
+// {
+//     formattedName = firstName;
+// }
+//
+// if (age < 21)
+// {
+//     Console.WriteLine($"I recommend you wait {21 - age} years, {formattedName}");
+// }
+// else
+// {
+//         Console.WriteLine($"Welcome to class {formattedName}");
+// }
 
 
