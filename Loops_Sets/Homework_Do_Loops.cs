@@ -18,20 +18,20 @@
 //
 //     Do this until the user types "exit".
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-string firstName;
-
-do
-{
-    Console.Write("Hello User! What is your first name? ");
-    firstName = Console.ReadLine();
-    
-    if (firstName.ToLower() == "tim")
-    {
-        Console.WriteLine("Welcome Professor");
-    }
-    else if (firstName.ToLower() != "exit")
-    {
-        Console.WriteLine("Welcome Student");
-    }
-
-} while (firstName.ToLower() != "exit");
+// string firstName;
+//
+// do
+// {
+//     Console.Write("Hello User! What is your first name? ");
+//     firstName = Console.ReadLine();
+//     
+//     if (firstName.ToLower() == "tim")
+//     {
+//         Console.WriteLine("Welcome Professor");
+//     }
+//     else if (firstName.ToLower() != "exit")
+//     {
+//         Console.WriteLine("Welcome Student");
+//     }
+//
+// } while (firstName.ToLower() != "exit");
