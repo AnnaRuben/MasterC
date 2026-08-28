@@ -529,16 +529,137 @@ Console.WriteLine($"Your age is {age}.");
 //and maybe we want to say let me get out of it another way like give me a valid age or type exit to end the program because maybe they don't have a valid age ,and so we have to get out some way.      
 //so we don't want to force the user to give us a fake age, so we need to be care full from that as well.
 //we can use loops for things like we can capture instead of ageText maybe we can capture "do you want to keep going? " and if the user say yes, and should i keep going == yes or To.Lower() == yes then do it again.
-//we can capture a number of people that way, if we ask for people attend to a party ,the user will type a name ,and we will ask is there another guest is coming ? the user say yes and it loops back up and it trys again   
+//we can capture a number of people that way, if we ask for people attend to a party ,the user will type a name ,and we will ask is there another guest is coming ? the user say yes and it loops back up and it trys again, ok what is the guest name? ,and we say Bob, ok is another guest is coming ? yes, then go back to the top, what is their name ? Sue, is another guest coming ? No, and then it goes on and does the rest of the stuff.     
+//so this do loop can be really powerful.
+//remember, there is 2 kinds of loops, do loop that is the do\while loop , and while loop .
+//the while loop is practically the same as the do loop.
+//the difference is :
 
 
+//~~~~~~~~~~~~
+// do
+// {
+//     
+// } while (true);
+//
+// while (true)
+// {
+
+// }
+//~~~~~~~~~~~~
+
+
+//we have done this ,do and it runs this code :
+
+
+//~~~~~~~~~~~~
+// do
+// {
+//     
+// } while (true);
+//~~~~~~~~~~~~
+
+
+//and then evaluates if this is true or false :
+
+
+//~~~~~~~~~~~
+//while (true);
+//~~~~~~~~~~~
+
+
+//and while it is true ,go back to the top .
+
+//while loop :
+
+
+//~~~~~~~~~~~
+// while (true)
+// {
+
+// }
+//~~~~~~~~~~~
+
+
+//has the evaluation at the top, and then curly braces.
+
+
+//~~~~~~~~~~~~~~~~~~~~~
+// do
+// {
+//Run the code at least once .   
+// } while (true);
+//~~~~~~~~~~~~~~~~~~~~~
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~
+// while (true)
+// {
+//Runs the code 0 or more times.
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//do loop, we always going to run the code once ,and then we will check to see if we should continue and do it again.    
+//while loop, we are going to check first if we should run the code ,and then we are going to run the code how many times we need to, so we might not ever run the code in the case of a while loop.       
+
+//when would we use do/while or while loops ?
+//in our case ,we are asking the persons age and then going back to the top if it is invalid.
+//well that means we should ask for the age at least once because we have to ask them what the age first, we should evaluate if their age is valid before we know what the age is.
+//therefor we run this code once :
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// do
+// {
+//     Console.Write("How old are you? ");
+//     string ageText = Console.ReadLine();
+//
+//     isValidAge = int.TryParse(ageText, out age);
+//     
+//     if (isValidAge == false)
+//     {
+//         Console.WriteLine("That was an invalid age.");
+//     }
+// } while (isValidAge ==  false);
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//therefor we need a do loop.
+
+//there are other cases, maybe we have something to clean up or potentially we need to clean up some code ,and we will do a check to say hey, do we neen a cleanup ? 
+//if yes, do the cleanup in here:
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~
+// while (true)
+// {
+
+// }
+//~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//otherwise just keep going !
+//and if we do need to do a cleanup, we do the cleanup and say ,are we done the cleanup ? 
+//no, do it again ! and again ! until we are done the cleanup ,and we go, ok now we done, and exit out.   
+//so it depends on our scenario, if we use do/while or while loops.
+//but the do/while and the while loops are basically the same except for how many times they will run at least.
+//the while loop will run at least 0 times, it might not run at all. 
+//the do loop will run at least 1 time. 
+
+//remember ,in the do loop ,this is evaluation just like an if statements :
+
+
+//~~~~~~~~~~~~~~~~~~~~~
+//while (isValidAge ==  false);
+//~~~~~~~~~~~~~~~~~~~~~
+
+
+//we can have the same things like :
+//and, or, &&, ||, To.Lower(), <, >, age range. 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
 
 
-// while (true)
-// {
-
-// }
