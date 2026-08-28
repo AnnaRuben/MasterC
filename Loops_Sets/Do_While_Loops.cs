@@ -1,5 +1,5 @@
-bool isValidAge;
-int age;
+// bool isValidAge;
+// int age;
 
 
 
@@ -14,20 +14,20 @@ int age;
 
 
 
-do
-{
-    Console.Write("How old are you? ");
-    string ageText = Console.ReadLine();
-
-    isValidAge = int.TryParse(ageText, out age);
-    
-    if (isValidAge == false)
-    {
-        Console.WriteLine("That was an invalid age.");
-    }
-} while (isValidAge ==  false);
-
-Console.WriteLine($"Your age is {age}.");
+// do
+// {
+//     Console.Write("How old are you? ");
+//     string ageText = Console.ReadLine();
+//
+//     isValidAge = int.TryParse(ageText, out age);
+//     
+//     if (isValidAge == false)
+//     {
+//         Console.WriteLine("That was an invalid age.");
+//     }
+// } while (isValidAge ==  false);
+//
+// Console.WriteLine($"Your age is {age}.");
 
 
 
@@ -658,8 +658,3 @@ Console.WriteLine($"Your age is {age}.");
 //we can have the same things like :
 //and, or, &&, ||, To.Lower(), <, >, age range. 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-
-
