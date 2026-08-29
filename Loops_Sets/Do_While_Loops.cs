@@ -1,9 +1,6 @@
 // bool isValidAge;
 // int age;
 
-
-
-
 // int testNumber = 0;
 //
 // do
@@ -11,9 +8,7 @@
 //     Console.Write(testNumber);
 //     testNumber += 3;
 // } while (testNumber < 10);
-
-
-
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // do
 // {
 //     Console.Write("How old are you? ");
@@ -28,11 +23,7 @@
 // } while (isValidAge ==  false);
 //
 // Console.WriteLine($"Your age is {age}.");
-
-
-
-
-
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // do
 // {
 //     
@@ -43,9 +34,6 @@
 
 // }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
 //do loop and while loop are practically the same .
 //but there is an important difference .
 //do and while loops will run continually until this becomes false : while (true);
