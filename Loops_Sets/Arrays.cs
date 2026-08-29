@@ -17,27 +17,21 @@
 
 //double quotes identifies a string
 
-string data = "Tim,Sue,Bob,Jane,Frank";
-string[] firstNames = data.Split(',');
-
-Console.WriteLine(firstNames[1]);
-
-Console.WriteLine(firstNames[firstNames.Length - 1]);
-
-Console.WriteLine(firstNames.Length);
-
-string[] lastNames = new string[];
-
-string[] lastNames = new string[] {"Corey", "Smith", "Jons"};
-
-int[] ages = new int[] {2, 3, 4};
-
-
-
-
-
-
-
+// string data = "Tim,Sue,Bob,Jane,Frank";
+// string[] firstNames = data.Split(',');
+//
+// Console.WriteLine(firstNames[1]);
+//
+// Console.WriteLine(firstNames[firstNames.Length - 1]);
+//
+// Console.WriteLine(firstNames.Length);
+//
+// string[] lastNames = new string[];
+//
+// string[] lastNames = new string[] {"Corey", "Smith", "Jons"};
+//
+// int[] ages = new int[] {2, 3, 4};
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Array is a Variable type, that holds a bunch of something  
 
 //we create new string array called first names.
