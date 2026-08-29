@@ -1,3 +1,47 @@
+//HEADER:                                         ask the user for age + check if it's valid + print age:
+// bool isValidAge;
+// int age;
+//
+// do
+// {
+//     Console.Write("How old are you? ");
+//     string ageText = Console.ReadLine();
+//
+//     isValidAge = int.TryParse(ageText, out age);
+//
+//     if (isValidAge == false)
+//     {
+//         Console.WriteLine("That was an invalid age.");
+//     }
+// } while (isValidAge);
+//
+// Console.WriteLine($"Your age is {age}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // bool isValidAge;
 // int age;
 
