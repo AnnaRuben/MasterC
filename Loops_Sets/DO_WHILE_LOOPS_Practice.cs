@@ -58,23 +58,23 @@
 //Note: `age` should also be available outside the loop — just as the scope topic Tim teaches in the file.
 
 
-bool isValidAge;
-int age;
-
-do
-{
-    Console.Write("How old are you? ");
-    string ageText = Console.ReadLine();
-
-    isValidAge = int.TryParse(ageText, out age);
-
-    if (isValidAge == false)
-    {
-        Console.WriteLine("That was an invalid age.");
-    }
-} while (isValidAge);
-
-Console.WriteLine($"Your age is {age}");
+// bool isValidAge;
+// int age;
+//
+// do
+// {
+//     Console.Write("How old are you? ");
+//     string ageText = Console.ReadLine();
+//
+//     isValidAge = int.TryParse(ageText, out age);
+//
+//     if (isValidAge == false)
+//     {
+//         Console.WriteLine("That was an invalid age.");
+//     }
+// } while (isValidAge);
+//
+// Console.WriteLine($"Your age is {age}");
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // ## Exercise 4 — Valid Number
 // Ask:
