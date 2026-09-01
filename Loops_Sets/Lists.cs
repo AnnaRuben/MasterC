@@ -1,58 +1,26 @@
-//HEADER:                                                     string[] firstNames = new string[5];
-List<string> firstNames = new List<string>();
-
-firstNames.Add("Tim");
-firstNames.Add("Sue");
-firstNames.Add("Bob");
-firstNames.Add("Jane");
-
-Console.WriteLine(firstNames[firstNames.Count - 1]);
-
-List<int> ages = new List<int>();
-ages.Add(1);
-ages.Add(2);
-ages.Add(3);
-ages.Add(4);
-
-//HEADER:                                                                                       List<T> - generic
-string data = "Corey, Smith, Jones";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//HEADER:                                                    string[] firstNames = new string[5];
+// List<string> firstNames = new List<string>();
+//
+// firstNames.Add("Tim");
+// firstNames.Add("Sue");
+// firstNames.Add("Bob");
+// firstNames.Add("Jane");
+//
+// Console.WriteLine(firstNames[firstNames.Count - 1]);
+//
+// List<int> ages = new List<int>();
+// ages.Add(1);
+// ages.Add(2);
+// ages.Add(3);
+// ages.Add(4);
+//
+// //HEADER:                                                                              List<T> - generic
+// string data = "Corey, Smith, Jones";
+//
+// //HEADER:                                                 this is what we did last time with an Array :
+// //HEADER:                                                     string[] lastNames = data.Split(',');
+// List<string> lastNames = data.Split(',').ToList();
+// lastNames.Add("Franklin");
 
 
 //HEADER:                                                                          List is like an Array.
@@ -67,9 +35,9 @@ string data = "Corey, Smith, Jones";
 //and they can grow over time 
 //so if we are going to have a set of date ,and we get a chance or choice, we use a list, a list is an easy way to set things up.    
 
-//HEADER:                                                                                       List<T> - generic
+//HEADER:                                                                              List<T> - generic
 //called a list of T for a generic ,because of the fact that we get to choose, when we create the list ,what that T is going to be ,  we able to choose any type we want ,in this case we will give it a type of string :
-//HEADER:                                             List<string> firstNames = new List<string>();
+//HEADER:                                           List<string> firstNames = new List<string>();
 //it can be a list of DateTime
 //a list of bool
 //a list of string
@@ -79,20 +47,23 @@ string data = "Corey, Smith, Jones";
 
 //HEADER:                                                                          List of last names:
 //HEADER:                                                      string data = "Corey, Smith, Jones";
-//and we want to split this apart
+//and we want to split this apart.
+
+//HEADER:                                                 this is what we did last time with an Array :
+//HEADER:                                                     string[] lastNames = data.Split(',');
+//HEADER:                                                                       but we like list better:
+//HEADER:                                             List<string> lastNames = data.Split(',').ToList();
+//so we can:
+//Split(',') ,which give us an array ,
+//but we can say dot (.)
+//ToList()
+//instead of array ,give us a list.
+//now it's a list of last names which means that we can add to it as wel . 
+//HEADER:                                                                 lastNames.Add("Franklin");
 
 
-
-
-
-
-
-
-
-
-
-//                                                              we can do the same thing with other type, int:
-//HEADER:                                                          List<int> ages = new List<int>();
+//HEADER:                                                 we can do the same thing with other type, int:
+//HEADER:                                                                List<int> ages = new List<int>();
 //HEADER:                                                                                ages.Add(1);
 //HEADER:                                                                                ages.Add(2);
 //HEADER:                                                                                ages.Add(3);
@@ -101,11 +72,11 @@ string data = "Corey, Smith, Jones";
 
 //this means that the list will contains strings.
 //HEADER:                                                                           very similar to :
-//HEADER:                                                  string[] firstNames = new string[5]; 
+//HEADER:                                                    string[] firstNames = new string[5]; 
 
 //this list is going to be a set of strings that we are going to call firstNames.
 //and we have initialised it, meaning set up that list.  
-//HEADER:                                                  List<string> firstNames = new List<string>();
+//HEADER:                                           List<string> firstNames = new List<string>();
 
 //                                                  This is like a command that says create the list and put it in firstNames :
 //HEADER:                                                                      new List<string>();
@@ -142,4 +113,3 @@ string data = "Corey, Smith, Jones";
 
 //                                                                                            we will get "Frank": 
 //HEADER:                                   Console.WriteLine(firstNames[firstNames.Count - 1]);
-
