@@ -126,18 +126,18 @@
 // Yes
 // yes
 // will also work.
-// ## Exercise 8 — Student Names
-// Inside `do/while` ask:
-// What is the student's name?
-// After the user types a name:
-// Student: Anna
-// Then:
-// Is there another student?
-// If the answer is:
-// yes
-// ask for the student's name again.
-// If not — exit the loop.
-// # 🟠 Party Exercise
+// #                Exercise 8 — Student Names
+// !                     Inside `do/while` ask:
+// @                    What is the student's name?
+// $                    After the user types a name:
+// %                     Student: Anna
+// ^                      Then:
+// &                      Is there another student?
+// *                      If the answer is:
+//   yes
+//    ask for the student's name again.
+// ?                       If not — exit the loop.
+// !                       🟠 Party Exercise
 // This is directly based on the example Tim describes at the end of the lesson: getting a guest's name, asking "Is another guest coming?", and if so returning to the beginning of the loop.
 // ## Exercise 9 — Party Guests
 // Write a program that asks:
