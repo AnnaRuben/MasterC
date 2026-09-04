@@ -11,42 +11,21 @@
 //     Console.WriteLine($"{firstNames[i]} is in attendance");
 // }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-List<decimal> charges = new();
-
-charges.Add(23.78M);
-charges.Add(15.89M);
-charges.Add(125M);
-
-decimal total = 0;
-
-for (int i = 0; i < charges.Count; i++)
-{
-    total += charges[i];
-}
-
-Console.WriteLine($"Our Total charges: {total}");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// List<decimal> charges = new();
+//
+// charges.Add(23.78M);
+// charges.Add(15.89M);
+// charges.Add(125M);
+//
+// decimal total = 0;
+//
+// for (int i = 0; i < charges.Count; i++)
+// {
+//     total += charges[i];
+// }
+//
+// Console.WriteLine($"Our Total charges: {total}");
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //there is a  snippet ,we tap for f-o-r and hit TAB twice, and this creates a structure for us.
 //for loop ,special type of loop, designed to loop throw a set number of times.
 //we have 3 different sections inside the ()
