@@ -77,9 +77,9 @@
 // Console.WriteLine($"Your age is {age}");
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // ## Exercise 4 — Valid Number
-// Ask:
-// Please enter a number:
-// If the user types:
+//Ask:
+//Please enter a number:
+//If the user types:
 // hello
 // or any value other than `int`:
 // Invalid number.

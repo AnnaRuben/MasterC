@@ -1,4 +1,4 @@
-//HEADER:                                         ask the user for age + check if it's valid + print age:
+//purple:                                         ask the user for age + check if it's valid + print age:
 // bool isValidAge;
 // int age;
 //
@@ -16,32 +16,7 @@
 // } while (isValidAge);
 //
 // Console.WriteLine($"Your age is {age}");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // bool isValidAge;
 // int age;
 
